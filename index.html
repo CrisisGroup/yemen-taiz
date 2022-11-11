@@ -7,13 +7,13 @@
 <link rel="icon" type="image/x-icon" href="https://southsudan.crisisgroup.org/images/favicon.ico">
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Floods in South Sudan | International Crisis Group" />
+<meta name="twitter:title" content="Taiz in a Knot | International Crisis Group" />
 <meta name="twitter:description" content="The impacts of climate change are forcibly displacing hundreds of thousands — leading to deadly attacks between herders and local communities." />
 <meta name="twitter:site" content="@crisisgroup" />
 <meta name="twitter:image" content="https://southsudan.crisisgroup.org/images/ssd_social.jpg" />
 <meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Floods in South Sudan | International Crisis Group" />
+	<meta property="og:title" content="Taiz in a Knot | International Crisis Group" />
 	<meta property="og:description" content="Forced movement due to climate change increases deadly attacks between herders and local communities." />
 	<meta property="og:url" content="https://southsudan.crisisgroup.org" />
 	<meta property="og:site_name" content="International Crisis Group" />
@@ -23,7 +23,7 @@
 	<meta property="og:image:height" content="630" />
 
 		<meta charset='utf-8' />
-		<title>Floods in South Sudan | International Crisis Group</title>
+		<title>Taiz in a Knot | International Crisis Group</title>
 		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 		<meta name="author" content="International Crisis Group">
 		<meta property="article:published_time" content="2022-10-27T07:00:00+00:00" />
@@ -385,41 +385,11 @@
           } else
                $("#introlegend").hide("fast");
 
-							 if (chapterid == "01") {
-		                $("#ch1legend").show("slow");
-		           } else
-		                $("#ch1legend").hide("fast");
-
-										if (chapterid == "02") {
-		 		                $("#ch2legend").show("slow");
-		 		           } else
-		 		                $("#ch2legend").hide("fast");
-
-												if ((chapterid == "04" || chapterid == "05" || chapterid == "06" || chapterid == "07" )) {
-				 		                $("#ch4legend").show("slow");
-				 		           } else
-				 		                $("#ch4legend").hide("fast");
-
-												if ((chapterid == "08" || chapterid == "08B")) {
-				 		                $("#ch8legend").show("slow");
-				 		           } else
-				 		                $("#ch8legend").hide("fast");
-
-												if (chapterid == "END-02") {
-														$("#01endlegend").show("slow");
-												} else
-														$("#01endlegend").hide("fast");
-
-												if (chapterid == "END-03") {
-														$("#endlegend").show("slow");
-												} else
-														$("#endlegend").hide("fast");
-
           response.element.classList.add('active');
-
-					if (chapter.id === 'NARRATIVE-1') {
-						response.element.classList.add('active-solid')
-					}
+					// change opacity of certain blocks
+					//if (chapter.id === 'NARRATIVE-1') {
+					//	response.element.classList.add('active-solid')
+					//}
 
           if (chapter.id === 'letter-0' || chapter.id === 'prelude-1') {
             document.getElementById('loader').style.opacity = 0;
@@ -448,6 +418,13 @@
           if (chapter.onChapterEnter.length > 0) {
               chapter.onChapterEnter.forEach(setLayerOpacity);
           }
+					if (chapter.location.bbox) {
+							{
+									map.fitBounds(chapter.location.bbox, {
+											padding: { top: 10, bottom: 25, left: 15, right: 5 }
+									});
+							}
+					}
           if (chapter.callback) {
               window[chapter.callback]();
           }

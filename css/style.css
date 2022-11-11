@@ -113,6 +113,7 @@ a:hover, a:visited {
   top: 0;
   bottom: 0;
   z-index: -1;
+  opacity: .5;
 }
 
 #header p.hedp {
@@ -365,7 +366,7 @@ h5 {
     background-size: cover;
 }
 #features {
-    padding-top: 20vh;
+    padding-top: 60vh;
     /* padding-bottom: 10vh; */
 }
 .hidden {

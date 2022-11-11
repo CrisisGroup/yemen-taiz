@@ -1,13 +1,13 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cla9v6wtm000l14nvdixna87z',
+    style: 'mapbox://styles/daltonwb/clacrmpr8003s15p8zbw0k1o0',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
     inset: false,
     theme: 'light',
-    projection: 'globe',
+    projection: 'mercator',
     use3dTerrain: false,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp">Thanks to a UN-brokered truce, Yemen has enjoyed a protracted period of relative calm over the past six months, the first such lull since the civil war broke out almost eight years ago.</p><p class="hedp"><strong>The UN has proposed a six-month, expanded truce. But wrangling over a deal to reopen Huthi-controlled roads in and around the city of Taiz – and Huthi demands for salary payments as an inducement to continue the détente - has pushed the truce to the verge of collapse. If an agreement is not struck the conflict may return to, or even exceed, previous levels of destructive intensity, and the prospects of a negotiated settlement will become more distant.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a><p id="vidcredit">Video: © <a href="https://www.unhcr.org/en-us/news/stories/2022/3/6242bef84/south-sudanese-battle-record-floods-amid-rapidly-changing-climate.html" target="_blank">UNHCR</a></p>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp">Thanks to a UN-brokered truce, Yemen has enjoyed a protracted period of relative calm over the past six months, the first such lull since the civil war broke out almost eight years ago.</p><p class="hedp"><strong>The UN has proposed a six-month, expanded truce. But wrangling over a deal to reopen Huthi-controlled roads in and around the city of Taiz – and Huthi demands for salary payments as an inducement to continue the détente - has pushed the truce to the verge of collapse. If an agreement is not struck the conflict may return to, or even exceed, previous levels of destructive intensity, and the prospects of a negotiated settlement will become more distant.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a>',
     subtitle: '',
     byline: '',
     footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Peter Salisbury<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Kevin Mazur and Veena Ali-Khan<br /><br /><h4>Data Sources</h4> <div class="data-sources"><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
@@ -18,39 +18,49 @@ var config = {
           hidden: false,
           title: 'Yemen’s Major Cities',
           image: '',
-          description: 'Before the ongoing civil war broke out in early 2015, Taiz City was Yemen’s second most populous urban centre.' + '<br /><br />' + '<strong>Rotate the globe by clicking and dragging your pointer, or use the controls in the top right. Throughout this story, you can freely explore the maps where there is a right arrow. &#8594;' + '<br /><br />' + 'Or scroll down to continue. &#8595;</strong>',
+          description: 'Before the ongoing civil war broke out in early 2015, Taiz City was Yemen’s second most populous urban centre.' + '<br /><br />' + '<strong>Explore the map by clicking and dragging your pointer, or use the controls in the top right. Throughout this story, you can freely explore the maps where there is a right arrow. &#8594;' + '<br /><br />' + 'Or scroll down to continue. &#8595;</strong>',
           location: {
-            center: [25.24688, 3.93630],
-            zoom: 2,
+            center: [47.4644, 15.8624],
+            zoom: 4,
             pitch: 0,
-            bearing: 0
+            bearing: 0,
+            bbox: [[41.3317, 11.9223], [54.6514, 19.5584]]
           },
           mapAnimation: 'flyTo',
           rotateAnimation: true,
-          callback: '',
+          callback: 'enableFreetime',
           onChapterEnter: [
-
+            {
+              layer: 'yemen-cities',
+              duration: 2000,
+              opacity: 1
+            }
           ],
           onChapterExit: [
-
+            {
+              layer: 'yemen-cities',
+              duration: 2000,
+              opacity: 0
+            }
         ]
       },
       {
           id: '01',
           alignment: 'left',
           hidden: false,
-          title: ' ',
+          title: '',
           image: '',
           description: 'Taiz was also an economic and transportation hub.',
           location: {
             center: [28.21862, 7.51420],
-            zoom: 5.79,
+            zoom: 7,
             pitch: 20.50,
-            bearing: 13.60
+            bearing: 13.60,
+            bbox: [[43.8858, 13.4942], [44.1461, 13.6515]]
           },
           mapAnimation: 'flyTo',
           rotateAnimation: false,
-          callback: '',
+          callback: 'disableFreetime',
           onChapterEnter: [
 
           ],
@@ -62,23 +72,32 @@ var config = {
             id: '02',
             alignment: 'left',
             hidden: false,
-            title: ' ',
+            title: '',
             image: '',
             description: 'Hawban, to the city’s northeast, was and is one of the country’s busiest industrial zones.',
             location: {
               center: [28.21862, 7.51420],
-              zoom: 5.79,
-              pitch: 20.50,
-              bearing: 13.60
+              zoom: 5,
+              pitch: 0,
+              bearing: 0,
+              bbox: [[43.9687, 13.5482], [44.1506, 13.6568]]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'city-lines',
+                duration: 2000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                layer: 'city-lines',
+                duration: 2000,
+                opacity: 0
+              }
           ]
           },
           {
@@ -90,9 +109,10 @@ var config = {
               description: 'Taiz’s local tax revenues were second only to those generated by Sanaa, the capital, and the busy southern port of Aden.',
               location: {
                 center: [28.21862, 7.51420],
-                zoom: 5.79,
-                pitch: 20.50,
-                bearing: 13.60
+                zoom: 5,
+                pitch: 0,
+                bearing: 0,
+                bbox: [[43.9687, 13.5482], [44.1506, 13.6568]]
               },
               mapAnimation: 'flyTo',
               rotateAnimation: false,
@@ -105,7 +125,7 @@ var config = {
             ]
         },
         {
-            id: '02',
+            id: '03',
             alignment: 'left',
             hidden: false,
             title: ' ',
@@ -113,32 +133,11 @@ var config = {
             description: 'The city is nestled between two of Yemen’s most important road routes. The N1 north-south highway, which connects the southern port of Aden with Sanaa, Yemen’s capital, passing through Hawban along the way. The N3 east-west highway that connects Taiz and the N1 with the Red Sea coast, including another major port, Hodeida',
             location: {
               center: [28.21862, 7.51420],
-              zoom: 5.79,
-              pitch: 20.50,
-              bearing: 13.60
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-
-            ],
-            onChapterExit: [
-
-          ]
-        },
-        {
-            id: '03',
-            alignment: 'left',
-            hidden: false,
-            title: ' ',
-            image: '',
-            description: 'Taiz city itself connects to these two highways via three branch roads that move out of the city’s north, east and west.',
-            location: {
-              center: [28.21862, 7.51420],
-              zoom: 5.79,
-              pitch: 20.50,
-              bearing: 13.60
+              zoom: 5,
+              pitch: 0,
+              bearing: 0,
+              speed: .2,
+              bbox: [[43.5788, 13.3466], [44.4736, 13.9278]]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -161,7 +160,9 @@ var config = {
               center: [28.21862, 7.51420],
               zoom: 5.79,
               pitch: 20.50,
-              bearing: 13.60
+              bearing: 13.60,
+              bbox: [[43.5240, 13.4268], [44.5682, 14.0964]],
+              speed: .2
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -177,23 +178,169 @@ var config = {
             id: '05',
             alignment: 'left',
             hidden: false,
-            title: ' ',
+            title: '2015',
             image: '',
             description: 'Taiz city has been badly affected by the war that broke out in 2015. In 2015 the Huthis, the de facto authorities in Yemen’s north since they seized Sanaa by force, attempted to take over the city.',
             location: {
               center: [28.21862, 7.51420],
               zoom: 5.79,
               pitch: 20.50,
-              bearing: 13.60
+              bearing: 13.60,
+              bbox: [[43.8858, 13.4942], [44.1461, 13.6515]],
+              speed: .2
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'control-taiz-2015',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'acled-heatmap-2015',
+                duration: 2000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                layer: 'control-taiz-2015',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'acled-heatmap-2015',
+                duration: 2000,
+                opacity: 0
+              }
+          ]
+        },
+        {
+            id: '05B',
+            alignment: 'left',
+            hidden: false,
+            title: '2016',
+            image: '',
+            description: 'In 2016....',
+            location: {
+              center: [28.21862, 7.51420],
+              zoom: 5.79,
+              pitch: 20.50,
+              bearing: 13.60,
+              bbox: [[43.8858, 13.4942], [44.1461, 13.6515]]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+                layer: 'control-taiz-2016',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'acled-heatmap-2016',
+                duration: 2000,
+                opacity: 1
+              }
+            ],
+            onChapterExit: [
+              {
+                layer: 'control-taiz-2016',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'acled-heatmap-2016',
+                duration: 2000,
+                opacity: 0
+              }
+          ]
+        },
+        {
+            id: '05C',
+            alignment: 'left',
+            hidden: false,
+            title: '2021',
+            image: '',
+            description: 'In 2021....',
+            location: {
+              center: [28.21862, 7.51420],
+              zoom: 5.79,
+              pitch: 20.50,
+              bearing: 13.60,
+              bbox: [[43.8858, 13.4942], [44.1461, 13.6515]]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+                layer: 'control-taiz-2021',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'acled-heatmap-2021',
+                duration: 2000,
+                opacity: 1
+              }
+            ],
+            onChapterExit: [
+              {
+                layer: 'control-taiz-2021',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'acled-heatmap-2021',
+                duration: 2000,
+                opacity: 0
+              }
+          ]
+        },
+        {
+            id: '05D',
+            alignment: 'left',
+            hidden: false,
+            title: '2022 30 September',
+            image: '',
+            description: 'Up until 30 September...',
+            location: {
+              center: [28.21862, 7.51420],
+              zoom: 5.79,
+              pitch: 20.50,
+              bearing: 13.60,
+              bbox: [[43.8858, 13.4942], [44.1461, 13.6515]]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+                layer: 'control-taiz-2022',
+                duration: 2000,
+                opacity: 1
+              },
+              {
+                layer: 'acled-heatmap-2022',
+                duration: 2000,
+                opacity: 1
+              }
+            ],
+            onChapterExit: [
+              {
+                layer: 'control-taiz-2022',
+                duration: 2000,
+                opacity: 0
+              },
+              {
+                layer: 'acled-heatmap-2022',
+                duration: 2000,
+                opacity: 0
+              }
           ]
         },
         {
