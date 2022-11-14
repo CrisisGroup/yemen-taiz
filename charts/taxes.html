@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yemen Government Revenues</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+</style>
+</head>
+<body>
+
+<script>
+  const labels = [
+    'Sanaa City','Taiz','Hudaidah','Aden','Ibb','Sanaa Governorate','Hajjah','Hadhramot','Dhamar','Amran','Saadah','Al-Baidha','Al-Dhaliaa','Lahj','Al-Mahweet','Maarib','Abyan','Al-Maharah','Raima','Shabwah','Al-Jawf',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Tax Revenues (In Millions USD)',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [4333.2,821.8,646.9,597.2,535.6,469.9,445,398.05,368.8,361.6,265.6,264.7,207,129,98.3,83.8,83.4,46.6,43.4,38.2,21.6],
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+    }
+  };
+</script>
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+
+</body>
+</html>
