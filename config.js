@@ -457,7 +457,7 @@ var config = {
         },
         {
             id: '09',
-            alignment: 'full',
+            alignment: 'right',
             hidden: false,
             title: '',
             image: '',
@@ -499,7 +499,7 @@ var config = {
             hidden: false,
             title: ' ',
             image: '',
-            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/qmzlGR7PoXw" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
+            description: '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/h0KgcbPpLes" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
             location: {
               center: [44.07033, 13.64270],
               zoom: 11.48,
