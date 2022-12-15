@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/clbo601lb000t14mtdbdm2587',
+    style: 'mapbox://styles/daltonwb/clbp6e8nw000z14qtgo79lgh5',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -32,10 +32,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                      layer: 'YEMEN',
+                      duration: 2000,
+                      opacity: 1
+                  }
             ],
             onChapterExit: [
-
+              {
+                      layer: 'YEMEN',
+                      duration: 2000,
+                      opacity: 0
+                  }
             ]
         },
         {
@@ -561,9 +569,9 @@ var config = {
                 layer: 'satellite',
                 duration: 2000,
                 opacity: 1
-            }, ],
+            }
+           ],
             onChapterExit: [
-
             ]
         },
         {
@@ -582,12 +590,20 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'roadDraw',
             onChapterEnter: [
-
+              {
+                  layer: 'road-draw-line',
+                  duration: 2000,
+                  opacity: .7
+              }
             ],
             onChapterExit: [
-
+              {
+                  layer: 'road-draw-line',
+                  duration: 2000,
+                  opacity: 0
+              }
             ]
         },
         {

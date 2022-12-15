@@ -422,18 +422,18 @@ h5 {
   background-color: #F8F8F8;
 }
 
-#INTRO .light {
+#PREFACE-1 .light {
   margin-top: 50%;
 }
 
 @media (max-width: 425px) {
-  #INTRO {
+  #PREFACE-1 {
     margin-top: 0 !important;
   }
 }
 
 @media (max-width: 425px) {
-  #INTRO .light {
+  #PREFACE-1 .light {
     margin-top: 0 !important;
   }
 }
