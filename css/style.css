@@ -116,14 +116,19 @@ a:hover, a:visited {
 }
 
 #header p.hedp {
-    text-align: center;
+    text-align: justify;
     font-family: 'franklin-gothic-urw', sans-serif;
     color: #DFD7D5;
-    padding: 0 30% 0 30%;
+    padding: 0 25% 0 25%;
     font-size: 1.6em;
     letter-spacing: .01em;
     line-height: 1.5;
     font-style: italic;
+}
+
+#center {
+  text-align: center !important;
+  font-weight: bold;
 }
 
 @media (max-width: 1920px) {

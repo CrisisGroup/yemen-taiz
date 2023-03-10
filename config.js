@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/clbp6e8nw000z14qtgo79lgh5',
+    style: 'mapbox://styles/daltonwb/clf35svmv000001qtpbzlimp1',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -7,7 +7,7 @@ var config = {
     theme: 'light',
     projection: 'mercator',
     use3dTerrain: false,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp">Since war broke out in Yemen in 2015 residents of Taiz, the third-largest pre-war city, have complained that Yemeni and outside powers are ignoring their plight. The city has been partially besieged for much of the last seven years. But efforts to reopen its roads have met resistance and indifference. That changed in April 2022 when Taiz’s roads were included as a confidence-building measure in a UN-brokered nationwide truce. Efforts to renew and expand the truce stalled in October 2022, and along with it the question of the roads.</p><p class="hedp"><strong>The good news is, Yemen’s roads are now part of nationwide negotiations, and rightly so. Road closures have hurt Yemen economically, politically and socially. Reopening them either as part of a truce or ceasefire, or even a national political settlement, will not be easy. Crisis Group explains why.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp">After UN-led truce talks in 2022, Yemen’s roads are high on the international and Yemeni list of priorities for future negotiations. Road closures have deepened a cost-of-living crisis, created huge barriers to movement for Yemenis seeking medical treatment and work in other parts of the country, and deepened social and political divides. Reopening them could lead to significant improvements in the humanitarian and political situation.</p><p class="hedp">Yet to date, no international initiative has successfully seen roads reopened. This is likely because control of roads is embedded in the parties’ military and political strategies. Preventing road access is a tool for limiting rivals’ scope for military advance, and economic activity in rival zones of control.</p><p class="hedp">The cost of closed roads is most keenly felt in Taiz, Yemen’s pre-war industrial and cultural capital. The city has been partially besieged for much of the last seven years. Efforts to reopen its roads have met resistance and indifference.</p><p class="hedp">That changed in April 2022 when Taiz’s roads were included as a confidence-building measure in a UN-brokered nationwide truce. Efforts to renew and expand the truce stalled in October 2022, and along with it the question of the roads.</p><p class="hedp">The good news is, Yemen’s roads are now part of nationwide negotiations, and are likely to remain so. But reopening them either as part of a truce or ceasefire, or even a national political settlement, will not be easy.</p><p class="hedp" id="center">In this story, Crisis Group explains why.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a>',
     subtitle: '',
     byline: '',
     footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Peter Salisbury<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Kevin Mazur and Veena Ali-Khan<br /><br /><h4>Data Sources</h4> <div class="data-sources"><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
@@ -36,7 +36,17 @@ var config = {
                       layer: 'YEMEN',
                       duration: 2000,
                       opacity: 1
-                  }
+                  },
+                  {
+                          layer: 'yemen-cities',
+                          duration: 2000,
+                          opacity: 0
+                      },
+                      {
+                          layer: 'yemen-labels',
+                          duration: 2000,
+                          opacity: 0
+                      }
             ],
             onChapterExit: [
               {
@@ -106,7 +116,88 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'The most important of these roads were three north-south and two east-west highway routes, along with a series of smaller trunk roads.',
+            description: 'The most important of these roads were three north-south highways.',
+            location: {
+                center: [47.4644, 15.8624],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0,
+                bbox: [
+                    [41.3317, 11.9223],
+                    [54.6514, 19.5584]
+                ]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+            ]
+        },
+        {
+            id: 'PREFACE-4B',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Two east-west highway routes.',
+            location: {
+                center: [47.4644, 15.8624],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0,
+                bbox: [
+                    [41.3317, 11.9223],
+                    [54.6514, 19.5584]
+                ]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+            ]
+        },
+        {
+            id: 'PREFACE-4C',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'A series of smaller trunk roads.',
+            location: {
+                center: [47.4644, 15.8624],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0,
+                bbox: [
+                    [41.3317, 11.9223],
+                    [54.6514, 19.5584]
+                ]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+            ]
+        },
+        {
+            id: 'PREFACE-4D',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'And hundreds of smaller paved and dirt roads.',
             location: {
                 center: [47.4644, 15.8624],
                 zoom: 4,
@@ -139,7 +230,7 @@ var config = {
                 zoom: 13.70,
                 pitch: 0.00,
                 bearing: 0.00,
-                speed: .5
+                bbox: [[39.18748, 12.32372], [52.15220, 18.32817]]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -152,7 +243,7 @@ var config = {
             ]
         },
         {
-            id: 'PREFACE-6',
+            id: 'PREFACE-5B',
             alignment: 'left',
             hidden: false,
             title: '',
@@ -163,7 +254,7 @@ var config = {
                 zoom: 13.70,
                 pitch: 0.00,
                 bearing: 0.00,
-                speed: .5
+                bbox: [[39.18748, 12.32372], [52.15220, 18.32817]]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -176,7 +267,7 @@ var config = {
             ]
         },
         {
-            id: 'PREFACE-7',
+            id: 'PREFACE-5C',
             alignment: 'left',
             hidden: false,
             title: '',
@@ -187,11 +278,59 @@ var config = {
                 zoom: 13.70,
                 pitch: 0.00,
                 bearing: 0.00,
-                speed: .5
+                bbox: [[39.18748, 12.32372], [52.15220, 18.32817]]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: 'disableFreetime',
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+            ]
+        },
+        {
+            id: 'PREFACE-6A',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Road closures have forced commercial and passenger traffic moving between rival zones of control to travel along small, poorly maintained and often untarmacked roads.',
+            location: {
+                center: [44.01830, 13.57773],
+                zoom: 13.70,
+                pitch: 0.00,
+                bearing: 0.00,
+                bbox: [[39.18748, 12.32372], [52.15220, 18.32817]]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+
+            ],
+            onChapterExit: [
+
+            ]
+        },
+        {
+            id: 'PREFACE-6B',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Compounding these barriers to movement, beyond the frontlines major road routes are dotted with checkpoints where uncoordinated armed groups charge commercial and passenger traffic a litany of fees, increasing the cost of travel.',
+            location: {
+                center: [44.01830, 13.57773],
+                zoom: 13.70,
+                pitch: 0.00,
+                bearing: 0.00,
+                bbox: [[39.18748, 12.32372], [52.15220, 18.32817]]
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
             onChapterEnter: [
 
             ],
