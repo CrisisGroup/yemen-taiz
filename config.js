@@ -236,10 +236,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'territorial-control',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                  layer: 'territorial-control',
+                  duration: 2000,
+                  opacity: 0
+              }
             ]
         },
         {
