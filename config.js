@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/clf35svmv000001qtpbzlimp1',
+    style: 'mapbox://styles/daltonwb/clf6t365k000801qqwbgzflz8',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -62,52 +62,40 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Unlike many of its Arab neighbours, rather than in big cities the majority of Yemen’s population live in rural areas that host around 140,000 towns, villages and small settlements.',
+            description: 'Unlike many of its Arab neighbours, rather than in big cities the majority of Yemen’s population live in rural areas that host around 140,000 towns, villages and small settlements. Yemen is also heavily import dependent, with 90% of wheat and 100% of rice, staples in the national diet, imported from abroad to the country’s major ports.' + '<div class="spacer"></div>' + 'The country’s heavily rural demographics, and its dependence on imported goods, made road transportation essential to the economic and social health of ordinary Yemenis.',
             location: {
                 center: [47.4644, 15.8624],
                 zoom: 4,
                 pitch: 0,
                 bearing: 0,
-                bbox: [
-                    [41.3317, 11.9223],
-                    [54.6514, 19.5584]
-                ]
+                bbox: [[40.05557, 12.75680], [49.87632, 17.52111]]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'settlements',
+                  duration: 2000,
+                  opacity: 1
+              },
+              {
+                  layer: 'all-roads',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
-
-            ]
-        },
-        {
-            id: 'PREFACE-3',
-            alignment: 'left',
-            hidden: false,
-            title: '',
-            image: '',
-            description: 'Yemen is also heavily import dependent, with 90% of wheat and 100% of rice, staples in the national diet, imported from abroad to the country’s major ports.' + '<div class="spacer"></div>' + 'The country’s heavily rural demographics, and its dependence on imported goods, made road transportation essential to the economic and social health of ordinary Yemenis.',
-            location: {
-                center: [47.4644, 15.8624],
-                zoom: 4,
-                pitch: 0,
-                bearing: 0,
-                bbox: [
-                    [41.3317, 11.9223],
-                    [54.6514, 19.5584]
-                ]
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-
-            ],
-            onChapterExit: [
-
+              {
+                  layer: 'settlements',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'all-roads',
+                  duration: 2000,
+                  opacity: 0
+              }
             ]
         },
         {
@@ -686,11 +674,9 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [{
-                layer: 'satellite',
-                duration: 2000,
-                opacity: 0
-            }],
+            onChapterEnter: [
+
+            ],
             onChapterExit: [
 
             ]
@@ -707,16 +693,15 @@ var config = {
                 zoom: 14.29,
                 pitch: 73.44,
                 bearing: 170.70,
-                speed: .6
+                bbox: [
+                    [43.8660, 13.5085],
+                    [44.2447, 13.7447]
+                ]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [{
-                layer: 'satellite',
-                duration: 2000,
-                opacity: 1
-            }
+            onChapterEnter: [
            ],
             onChapterExit: [
             ]
@@ -729,10 +714,10 @@ var config = {
             image: '',
             description: 'After exiting the city, travelers can move on to Aden, to Huthi-controlled Hawban or to Mokha on the Red Sea coast via a series of challenging, poorly maintained routes.',
             location: {
-                center: [44.03496, 13.45168],
-                zoom: 12.22,
-                pitch: 69.94,
-                bearing: 130.70,
+                center: [44.40431, 13.24581],
+                zoom: 9,
+                pitch: 0,
+                bearing: 0,
                 speed: .4
             },
             mapAnimation: 'flyTo',
@@ -743,11 +728,31 @@ var config = {
                   layer: 'road-draw-line',
                   duration: 2000,
                   opacity: .7
+              },
+              {
+                  layer: 'yemen-cities',
+                  duration: 2000,
+                  opacity: 1
+              },
+              {
+                  layer: 'yemen-labels',
+                  duration: 2000,
+                  opacity: 1
               }
             ],
             onChapterExit: [
               {
                   layer: 'road-draw-line',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'yemen-cities',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'yemen-labels',
                   duration: 2000,
                   opacity: 0
               }
@@ -774,11 +779,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [{
-                    layer: 'satellite',
-                    duration: 2000,
-                    opacity: 0
-                },
+            onChapterEnter: [
                 {
                     layer: 'nightlights',
                     duration: 2000,
