@@ -767,9 +767,9 @@ var config = {
             description: 'Fighting, frozen frontlines and severed road access in and around Taiz city have had three effects on life in Taiz city and across Yemen.' + '<div class="spacer"></div>' + 'First, they have throttled the economy of Taiz city and made the city one of the most expensive places to live in Yemen. Satellite images of nighttime light can be used as a rough measure of economic output. Remotely captured date from Taiz City shows that the local economy cratered at the beginning of the war and is yet to recover to prewar levels, unlike neighbouring areas like the Huthi-held industrial hub of Hawban.',
             location: {
                 center: [44.02622, 13.57441],
-                zoom: 12,
-                pitch: -25.87,
-                bearing: 56.39,
+                zoom: 11,
+                pitch: 45.87,
+                bearing: -56.39,
                 speed: .7
             },
             mapAnimation: 'flyTo',
@@ -779,7 +779,7 @@ var config = {
                 {
                     layer: 'nightlights',
                     duration: 2000,
-                    opacity: 1
+                    opacity: .7
                 }
             ],
             onChapterExit: [{
