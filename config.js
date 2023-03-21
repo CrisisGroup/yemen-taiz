@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/clf6ukkml000g01njn729j8pu',
+    style: 'mapbox://styles/daltonwb/clfhp54jt003701lergsdlmbm',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -119,10 +119,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'intro-highways',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                  layer: 'intro-highways',
+                  duration: 2000,
+                  opacity: 0
+              }
             ]
         },
         {
@@ -146,10 +154,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'intro-highways-2',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                  layer: 'intro-highways-2',
+                  duration: 2000,
+                  opacity: 0
+              }
             ]
         },
         {
@@ -173,16 +189,24 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'intro-trunks',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                  layer: 'intro-trunks',
+                  duration: 2000,
+                  opacity: 0
+              }
             ]
         },
         {
             id: 'PREFACE-4D',
             alignment: 'left',
-            hidden: false,
+            hidden: true,
             title: '',
             image: '',
             description: 'And hundreds of smaller paved and dirt roads.',
@@ -200,7 +224,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'territorial-control',
+                  duration: 2000,
+                  opacity: 0
+              }
             ],
             onChapterExit: [
 
@@ -228,14 +256,20 @@ var config = {
                   layer: 'territorial-control',
                   duration: 2000,
                   opacity: 1
-              }
-            ],
-            onChapterExit: [
+              },
               {
-                  layer: 'territorial-control',
+                  layer: 'airstrikes_2021_inner',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'airstrikes_2021_outer',
                   duration: 2000,
                   opacity: 0
               }
+            ],
+            onChapterExit: [
+
             ]
         },
         {
@@ -256,7 +290,16 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'airstrikes_2021_inner',
+                  duration: 2000,
+                  opacity: 1
+              },
+              {
+                  layer: 'airstrikes_2021_outer',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
 
@@ -280,10 +323,43 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                  layer: 'closures',
+                  duration: 2000,
+                  opacity: 1
+              },
+              {
+                  layer: 'closures-hatch',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                  layer: 'territorial-control',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'closures',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'closures-hatch',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'airstrikes_2021_inner',
+                  duration: 2000,
+                  opacity: 0
+              },
+              {
+                  layer: 'airstrikes_2021_outer',
+                  duration: 2000,
+                  opacity: 0
+              }
             ]
         },
         {
@@ -363,6 +439,11 @@ var config = {
                     layer: 'yemen-labels',
                     duration: 2000,
                     opacity: 1
+                },
+                {
+                    layer: 'taiz-label',
+                    duration: 2000,
+                    opacity: 0
                 }
             ],
             onChapterExit: [{
@@ -395,7 +476,11 @@ var config = {
             rotateAnimation: false,
             callback: 'disableFreetime',
             onChapterEnter: [
-
+              {
+                  layer: 'taiz-label',
+                  duration: 2000,
+                  opacity: 1
+              }
             ],
             onChapterExit: [
 
@@ -415,20 +500,24 @@ var config = {
                 bearing: 0.00,
                 speed: .7,
                 bbox: [
-                    [43.8660, 13.5085],
-                    [44.2447, 13.7447]
+                    [43.96355, 13.54740, 44.11175, 13.62708]
                 ]
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'hawban',
+                layer: 'taiz-hawban',
                 duration: 2000,
                 opacity: 1
             }],
             onChapterExit: [{
-                layer: 'hawban',
+                layer: 'taiz-hawban',
+                duration: 2000,
+                opacity: 0
+            },
+            {
+                layer: 'taiz-label',
                 duration: 2000,
                 opacity: 0
             }]
