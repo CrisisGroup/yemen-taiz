@@ -329,7 +329,7 @@ var config = {
                   opacity: 1
               },
               {
-                  layer: 'closures-hatch',
+                  layer: 'closure-hatch',
                   duration: 2000,
                   opacity: 1
               }
@@ -346,7 +346,7 @@ var config = {
                   opacity: 0
               },
               {
-                  layer: 'closures-hatch',
+                  layer: 'closure-hatch',
                   duration: 2000,
                   opacity: 0
               },
@@ -650,7 +650,11 @@ var config = {
                     opacity: .5
                 }
             ],
-            onChapterExit: []
+            onChapterExit: [{
+                layer: 'acled-heatmap-2015',
+                duration: 2000,
+                opacity: 0
+            }]
         },
         {
             id: '05B',
