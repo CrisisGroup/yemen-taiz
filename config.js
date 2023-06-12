@@ -7,7 +7,7 @@ var config = {
     theme: 'light',
     projection: 'mercator',
     use3dTerrain: false,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp"><strong>After UN-led truce talks in 2022, Yemen’s roads are high on the international and Yemeni list of priorities for future negotiations. Road closures have deepened a cost-of-living crisis, created huge barriers to movement for Yemenis seeking medical treatment and work in other parts of the country, and deepened social and political divides. Reopening them could lead to significant improvements in the humanitarian and political situation.</strong></p><p class="hedp">Yet to date, no international initiative has successfully seen roads reopened. This is likely because control of roads is embedded in the parties’ military and political strategies. Preventing road access is a tool for limiting rivals’ scope for military advance, and economic activity in rival zones of control.</p><p class="hedp">The cost of closed roads is most keenly felt in Taiz, Yemen’s pre-war industrial and cultural capital. The city has been partially besieged for much of the last seven years. Efforts to reopen its roads have met resistance and indifference.</p><p class="hedp">That changed in April 2022 when Taiz’s roads were included as a confidence-building measure in a UN-brokered nationwide truce. Efforts to renew and expand the truce stalled in October 2022, and along with it the question of the roads.</p><p class="hedp">The good news is, Yemen’s roads are now part of nationwide negotiations, and are likely to remain so. But reopening them either as part of a truce or ceasefire, or even a national political settlement, will not be easy.</p><p class="hedp" id="center">In this story, Crisis Group explains why.</p><a id="freeExplore" href="#INTRO"> BEGIN &nbsp;&nbsp; &#8595; </a>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp"><strong>Road closures in Yemen have deepened a cost-of-living crisis, created huge barriers to movement for Yemenis seeking medical treatment and work in other parts of the country, and deepened social and political divides. Reopening them could lead to significant improvements in the humanitarian and political situation. But doing so will not be easy.</strong></p><p class="hedp">Taiz city is a case study for the cost and challenge of road closures in Yemen. The city has been partially besieged for much of the last seven years. Local and international initiatives have done little to change the status quo. Most recently, in April 2022, Taiz’s roads were included as a confidence-building measure in a UN-brokered nationwide truce. But little progress was made before the truce lapsed in October 2022.</p><p class="hedp">The good news is that Yemen’s roads are now part of nationwide negotiations. The bad news is that reopening them, either as part of a truce or ceasefire or a national political settlement, will not be easy. Control of roads is embedded in the parties’ military and political strategies. Preventing road access is a tool for limiting rivals’ scope for military advance, and economic activity in rival zones of control.</p><p class="hedp" id="center">Crisis Group tells the story of the power struggle for Taiz and how that fits into Yemen’s war for its roads.</p><a id="freeExplore" href="#PREFACE-1"> BEGIN &nbsp;&nbsp; &#8595; </a>',
     subtitle: '',
     byline: '',
     footer: '<h4>Credits</h4><strong>Lead Contributors</strong>: Peter Salisbury<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Kevin Mazur and Veena Ali-Khan<br /><br /><h4>Data Sources</h4> <div class="data-sources"><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
@@ -62,7 +62,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Unlike many of its Arab neighbours, rather than in big cities the majority of Yemen’s population live in rural areas that host around 140,000 towns, villages and small settlements. Yemen is also heavily import dependent, with 90% of wheat and 100% of rice, staples in the national diet, imported from abroad to the country’s major ports.' + '<div class="spacer"></div>' + 'The country’s heavily rural demographics, and its dependence on imported goods, made road transportation essential to the economic and social health of ordinary Yemenis.',
+            description: 'Unlike many of its Arab neighbours, Yemen is a highly rural country. The majority of Yemen’s population live in rural areas that host around 140,000 towns, villages and small settlements.' + '<div class="spacer"></div>' + 'Yemen is also heavily import dependent: 90% of wheat and all rice, staples in the national diet, are imported from abroad.' + '<div class="spacer"></div>' + '<strong>This makes road transportation essential to the economic and social health of ordinary Yemenis.</strong>',
             location: {
                 center: [47.4644, 15.8624],
                 zoom: 4,
@@ -464,7 +464,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Taiz was also an economic and transportation hub.',
+            description: 'Taiz was Yemen’s prewar commercial and cultural capital. It was also an important economic and transportation hub.',
             location: {
                 center: [44.01830, 13.57773],
                 zoom: 13.70,
@@ -492,7 +492,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Hawban, to the city’s northeast, was and is one of the country’s busiest industrial zones.',
+            description: 'Hawban, to the city’s northeast, was the engine of Taiz’s economy. It was one of the country’s busiest industrial zones.',
             location: {
                 center: [44.07033, 13.64270],
                 zoom: 11.48,
@@ -527,8 +527,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: ' ',
-            image: '',
-            description: 'Taiz’s local tax revenues were second only to those generated by Sanaa, the capital, and the busy southern port of Aden.' + '<div class="spacer"></div>' + '<div class="video-container"><iframe src="charts/taxes.html" frameborder="0" scrolling="no" /></div>',
+            image: 'images/revenues.png',
+            description: 'Taiz’s local tax revenues were second only to those generated by Sanaa, the capital.',
             location: {
                 center: [44.07033, 13.64270],
                 zoom: 11.48,
@@ -609,11 +609,6 @@ var config = {
                     layer: 'branch-roads',
                     duration: 2000,
                     opacity: 1
-                },
-                {
-                    layer: 'control-taiz-2015',
-                    duration: 2000,
-                    opacity: 0
                 }
             ],
             onChapterExit: [{
@@ -626,9 +621,9 @@ var config = {
             id: '05',
             alignment: 'left',
             hidden: false,
-            title: '2015',
+            title: 'Conflict in Taiz',
             image: '',
-            description: 'Taiz city has been badly affected by the war that broke out in 2015. In 2015, the Huthis, the de facto authorities in Yemen’s north since they seized Sanaa by force, attempted to take over the city.',
+            description: 'Taiz city has been badly affected by the war. In March 2015 the Huthis, who had seized Sanaa by force the previous September, attempted to take over the city.',
             location: {
                 center: [44.01830, 13.57773],
                 zoom: 13.70,
@@ -639,111 +634,10 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [{
-                    layer: 'control-taiz-2015',
-                    duration: 2000,
-                    opacity: 1
-                },
-                {
-                    layer: 'acled-heatmap-2015',
-                    duration: 2000,
-                    opacity: .5
-                }
+            onChapterEnter: [
             ],
-            onChapterExit: [{
-                layer: 'acled-heatmap-2015',
-                duration: 2000,
-                opacity: 0
-            }]
-        },
-        {
-            id: '05B',
-            alignment: 'left',
-            hidden: false,
-            title: '2016',
-            image: '',
-            description: 'In 2016....',
-            location: {
-                center: [44.01830, 13.57773],
-                zoom: 13.70,
-                pitch: 0.00,
-                bearing: 0.00,
-                speed: .5
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [{
-                layer: 'acled-heatmap-2016',
-                duration: 2000,
-                opacity: .5
-            }],
-            onChapterExit: [{
-                layer: 'acled-heatmap-2016',
-                duration: 2000,
-                opacity: 0
-            }]
-        },
-        {
-            id: '05C',
-            alignment: 'left',
-            hidden: false,
-            title: '2021',
-            image: '',
-            description: 'In 2021....',
-            location: {
-                center: [44.01830, 13.57773],
-                zoom: 13.70,
-                pitch: 0.00,
-                bearing: 0.00,
-                speed: .5
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [{
-                layer: 'acled-heatmap-2021',
-                duration: 2000,
-                opacity: .5
-            }],
-            onChapterExit: [{
-                layer: 'acled-heatmap-2021',
-                duration: 2000,
-                opacity: 0
-            }]
-        },
-        {
-            id: '05D',
-            alignment: 'left',
-            hidden: false,
-            title: '2022 30 September',
-            image: '',
-            description: 'Up until 30 September...',
-            location: {
-                center: [44.01830, 13.57773],
-                zoom: 13.70,
-                pitch: 0.00,
-                bearing: 0.00,
-                speed: .5
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [{
-                layer: 'acled-heatmap-2022',
-                duration: 2000,
-                opacity: .5
-            }],
-            onChapterExit: [{
-                    layer: 'control-taiz-2015',
-                    duration: 2000,
-                    opacity: 0
-                },
-                {
-                    layer: 'acled-heatmap-2022',
-                    duration: 2000,
-                    opacity: 0
-                }
+            onChapterExit: [
+
             ]
         },
         {
@@ -853,7 +747,7 @@ var config = {
         },
         {
             id: '09',
-            alignment: 'right',
+            alignment: 'left',
             hidden: false,
             title: '',
             image: '',
