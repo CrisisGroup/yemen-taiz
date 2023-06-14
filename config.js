@@ -9,7 +9,7 @@ var config = {
   projection: "mercator",
   use3dTerrain: false,
   title:
-    '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp"><strong>Road closures in Yemen have deepened a cost-of-living crisis, created huge barriers to movement for Yemenis seeking medical treatment and work in other parts of the country, and deepened social and political divides. Reopening them could lead to significant improvements in the humanitarian and political situation. But doing so will not be easy.</strong></p><p class="hedp">Taiz city is a case study for the cost and challenge of road closures in Yemen. The city has been partially besieged for much of the last seven years. Local and international initiatives have done little to change the status quo. Most recently, in April 2022, Taiz’s roads were included as a confidence-building measure in a UN-brokered nationwide truce. But little progress was made before the truce lapsed in October 2022.</p><p class="hedp">The good news is that Yemen’s roads are now part of nationwide negotiations. The bad news is that reopening them, either as part of a truce or ceasefire or a national political settlement, will not be easy. Control of roads is embedded in the parties’ military and political strategies. Preventing road access is a tool for limiting rivals’ scope for military advance, and economic activity in rival zones of control.</p><p class="hedp" id="center">Crisis Group tells the story of the power struggle for Taiz and how that fits into Yemen’s war for its roads.</p><a id="freeExplore" href="#PREFACE-1"> BEGIN &nbsp;&nbsp; &#8595; </a>',
+    '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster1.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp"><strong>Road closures in Yemen have deepened a cost-of-living crisis, created huge barriers to movement for Yemenis seeking medical treatment and work in other parts of the country, and deepened social and political divides. Reopening them could lead to significant improvements in the humanitarian and political situation. But doing so will not be easy.</strong></p><p class="hedp">Taiz city is a case study for the cost and challenge of road closures in Yemen. The city has been partially besieged for much of the last seven years. Local and international initiatives have done little to change the status quo. Most recently, in April 2022, Taiz’s roads were included as a confidence-building measure in a UN-brokered nationwide truce. But little progress was made before the truce lapsed in October 2022.</p><p class="hedp">The good news is that Yemen’s roads are now part of nationwide negotiations. The bad news is that reopening them, either as part of a truce or ceasefire or a national political settlement, will not be easy. Control of roads is embedded in the parties’ military and political strategies. Preventing road access is a tool for limiting rivals’ scope for military advance, and economic activity in rival zones of control.</p><p class="hedp" id="center">Crisis Group tells the story of the power struggle for Taiz and how that fits into Yemen’s war for its roads.</p><a id="freeExplore" href="#PREFACE-1"> BEGIN &nbsp;&nbsp; &#8595; </a>',
   subtitle: "",
   byline: "",
   footer:
@@ -93,14 +93,14 @@ var config = {
     },
     {
       id: "PREFACE-2",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "",
       image: "",
       description:
         "Unlike many of its Arab neighbours, Yemen is a highly rural country. The majority of Yemen’s population live in rural areas that host around 140,000 towns, villages and small settlements." +
         '<div class="spacer"></div>' +
-        "Yemen is also heavily import dependent: 90% of wheat and all rice, staples in the national diet, are imported from abroad." +
+        "Yemen is also heavily <u class='red'>import dependent</u>: 90% of wheat and all rice, staples in the national diet, are imported from abroad." +
         '<div class="spacer"></div>' +
         "<strong>This makes road transportation essential to the economic and social health of ordinary Yemenis.</strong>",
       location: {
@@ -278,7 +278,7 @@ var config = {
     },
     {
       id: "PREFACE-5",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "",
       image: "",
@@ -318,7 +318,7 @@ var config = {
     },
     {
       id: "PREFACE-5B",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "",
       image: "",
@@ -353,7 +353,7 @@ var config = {
     },
     {
       id: "PREFACE-5C",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "",
       image: "",
@@ -414,7 +414,7 @@ var config = {
     },
     {
       id: "PREFACE-6A",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "",
       image: "",
@@ -462,7 +462,7 @@ var config = {
     },
     {
       id: "INTRO",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "Yemen’s Major Cities",
       image: "",
@@ -584,13 +584,13 @@ var config = {
       ],
     },
     {
-      id: "02",
+      id: "info02",
       alignment: "center",
       hidden: false,
-      title: " ",
+      title: "",
       image: "images/revenues.png",
       description:
-        "Taiz’s local tax revenues were second only to those generated by Sanaa, the capital.",
+        "",
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,
@@ -853,7 +853,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        '<div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/h0KgcbPpLes" frameBorder="0" scrolling="no" allowfullscreen></iframe></div>',
+        '<span class="html-video-container"><video width="100%" height="100%" autoplay loop muted playsinline>&gt;<source src="images/hajat.mp4" poster="images/poster2.jpg type="video/mp4"></video></span>',
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,
@@ -879,7 +879,6 @@ var config = {
       image: "",
       description:
         "Second, they have made getting in and out of the city via treacherous ordeal for traders and ordinary people. All-too-regular traffic accidents on the few narrow and poorly-maintained roads connecting Taiz with the rest of the country cause regular shortages of food and fuel." +
-        '<div class="spacer"></div>' +
         '<div class="spacer"></div>' +
         "Taizis traveling to Habwan for work, or to Aden for medical treatment, are forced to travel along long road routes." +
         "And third, it has cut off two of Yemen’s most important road routes, the N1 and N3, forcing travelers and traders to re-route along long, arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and the cost of living.",
