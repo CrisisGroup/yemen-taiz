@@ -496,11 +496,13 @@ p.top-narrative {
 }
 
 #NARRATIVE-END .light {
+  background-color: rgba(0, 0, 0, 1);
   background-image: url('../images/texturebg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
   padding: 5% 35%;
+  opacity: 1 !important;
 }
 
 @media (max-width: 1920px) {
