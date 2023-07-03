@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/daltonwb/clit4yn8d01wa01p7dxmv5a71",
+  style: "mapbox://styles/daltonwb/clixcgnr202ct01p11oa5etz1",
   accessToken:
     "pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw",
   showMarkers: false,
@@ -58,11 +58,6 @@ var config = {
           opacity: 1,
         },
         {
-          layer: "contour-line",
-          duration: 2000,
-          opacity: 1,
-        },
-        {
           layer: "hillshade",
           duration: 2000,
           opacity: 1,
@@ -76,11 +71,6 @@ var config = {
         },
         {
           layer: "cliff",
-          duration: 2000,
-          opacity: 0,
-        },
-        {
-          layer: "contour-line",
           duration: 2000,
           opacity: 0,
         },
@@ -126,7 +116,7 @@ var config = {
           layer: "all-roads",
           duration: 2000,
           opacity: 1,
-        },
+        }
       ],
       onChapterExit: [
         {
@@ -138,7 +128,7 @@ var config = {
           layer: "all-roads",
           duration: 2000,
           opacity: 0,
-        },
+        }
       ],
     },
     {
@@ -349,7 +339,23 @@ var config = {
           opacity: 1,
         },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+        {
+          layer: "airstrikes_2021_inner",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "airstrikes_2021_outer",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "territorial-control",
+          duration: 2000,
+          opacity: 0,
+        }
+      ],
     },
     {
       id: "PREFACE-5C",
@@ -383,6 +389,11 @@ var config = {
           duration: 2000,
           opacity: 1,
         },
+        {
+          layer: "all-roads",
+          duration: 2000,
+          opacity: 1,
+        },
       ],
       onChapterExit: [
         {
@@ -407,6 +418,11 @@ var config = {
         },
         {
           layer: "airstrikes_2021_outer",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "all-roads",
           duration: 2000,
           opacity: 0,
         },
@@ -545,13 +561,13 @@ var config = {
       onChapterExit: [],
     },
     {
-      id: "02",
-      alignment: "left",
+      id: "photo02",
+      alignment: "center",
       hidden: false,
       title: "",
-      image: "",
+      image: "images/hawban_sat.jpg",
       description:
-        "Hawban, to the city’s northeast, was the engine of Taiz’s economy. It was one of the country’s busiest industrial zones.",
+        "<h3>Hawban's Industrial Sector</h3>" + "Hawban, to the city’s northeast, was the engine of Taiz’s economy. It was one of the country’s busiest industrial zones.",
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,
@@ -689,13 +705,13 @@ var config = {
       ],
     },
     {
-      id: "05",
-      alignment: "left",
+      id: "photo05",
+      alignment: "center",
       hidden: false,
-      title: "Conflict in Taiz",
-      image: "",
+      title: "",
+      image: "images/conclusion.jpg",
       description:
-        "Taiz city has been badly affected by the war. In March 2015 the Huthis, who had seized Sanaa by force the previous September, attempted to take over the city.",
+        "<h3>Conflict in Taiz</h3>" + "Taiz city has been badly affected by the war. In March 2015 the Huthis, who had seized Sanaa by force the previous September, attempted to take over the city." + "<div class='spacer'></div>" + "Forces aligned with Yemen’s internationally recognized government recovered control of Taiz city centre in mid 2015. But the Huthis retained territory to the city’s north, east, and west, including the road routes that connected the city to the N1 and N3 highways.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -710,62 +726,13 @@ var config = {
       onChapterExit: [],
     },
     {
-      id: "06",
-      alignment: "left",
-      hidden: false,
-      title: " ",
-      image: "",
-      description:
-        "Forces aligned with Yemen’s internationally recognized government recovered control of Taiz city centre in mid 2015. But the Huthis retained territory to the city’s north, east, and west, including the road routes that connected the city to the N1 and N3 highways.",
-      location: {
-        center: [44.07033, 13.6427],
-        zoom: 11.48,
-        pitch: 0.0,
-        bearing: 0.0,
-        speed: 0.7,
-        bbox: [
-          [43.866, 13.5085],
-          [44.2447, 13.7447],
-        ],
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-    {
-      id: "07",
-      alignment: "left",
-      hidden: false,
-      title: " ",
-      image: "",
-      description:
-        "The only way in and out of the city is now a small road that connects the city’s southwest to a network of winding mountain roads.",
-      location: {
-        center: [43.99954, 13.55933],
-        zoom: 14.29,
-        pitch: 73.44,
-        bearing: 170.7,
-        bbox: [
-          [43.866, 13.5085],
-          [44.2447, 13.7447],
-        ],
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-    {
       id: "08",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: " ",
       image: "",
       description:
-        "After exiting the city, travelers can move on to Aden, to Huthi-controlled Hawban or to Mokha on the Red Sea coast via a series of challenging, poorly maintained routes.",
+        "The only way in and out of the city is now a small road that connects the city’s southwest to a network of winding mountain roads. After exiting the city, travelers can move on to Aden, to Huthi-controlled Hawban or to Mokha on the Red Sea coast via a series of challenging, poorly maintained routes.",
       location: {
         center: [44.40431, 13.24581],
         zoom: 9,
@@ -822,10 +789,10 @@ var config = {
         '<div class="spacer"></div>' +
         "First, they have throttled the economy of Taiz city and made the city one of the most expensive places to live in Yemen. Satellite images of nighttime light can be used as a rough measure of economic output. Remotely captured date from Taiz City shows that the local economy cratered at the beginning of the war and is yet to recover to prewar levels, unlike neighbouring areas like the Huthi-held industrial hub of Hawban.",
       location: {
-        center: [44.02622, 13.57441],
+        center: [44.056635, 13.572282],
         zoom: 11,
-        pitch: 45.87,
-        bearing: -56.39,
+        pitch: 51.5,
+        bearing: 0,
         speed: 0.7,
       },
       mapAnimation: "flyTo",
@@ -837,6 +804,11 @@ var config = {
           duration: 2000,
           opacity: 0.7,
         },
+        {
+          layer: "all-taiz-roads",
+          duration: 2000,
+          opacity: .5
+        }
       ],
       onChapterExit: [
         {
@@ -844,6 +816,11 @@ var config = {
           duration: 2000,
           opacity: 0,
         },
+        {
+          layer: "all-taiz-roads",
+          duration: 2000,
+          opacity: 0
+        }
       ],
     },
     {
@@ -906,39 +883,13 @@ var config = {
       onChapterExit: [],
     },
     {
-      id: "10",
-      alignment: "left",
-      hidden: false,
-      title: " ",
-      image: "",
-      description:
-        "Adding to the challenge of travel, the forces who control the city are not aligned with other anti-Huthi groups who control Yemen’s south or territory along the Red Sea coast.",
-      location: {
-        center: [45.5241, 15.08855],
-        zoom: 6.57,
-        pitch: 47.0,
-        bearing: 20.65,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "territorial-control",
-          duration: 2000,
-          opacity: 1,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
       id: "11",
       alignment: "left",
       hidden: false,
       title: " ",
       image: "",
       description:
-        "This tangle of forces, a profusion of poorly-managed checkpoints along the different road routes caused constant headaches for travelers who often have to pay fees at dozens of these checkpoints.",
+        "Adding to the challenge of travel, the forces who control the city are not aligned with other anti-Huthi groups who control Yemen’s south or territory along the Red Sea coast. This tangle of forces, a profusion of poorly-managed checkpoints along the different road routes caused constant headaches for travelers who often have to pay fees at dozens of these checkpoints.",
       location: {
         center: [45.5241, 15.08855],
         zoom: 6.57,
@@ -954,6 +905,11 @@ var config = {
           duration: 2000,
           opacity: 1,
         },
+        {
+          layer: "territorial-control",
+          duration: 2000,
+          opacity: 1,
+        }
       ],
       onChapterExit: [
         {
