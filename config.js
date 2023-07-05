@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/daltonwb/cljn2hs7h009x01pme54w8jke",
+  style: "mapbox://styles/daltonwb/cljprzlkt00w301pd1kq0gufp",
   accessToken:
     "pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw",
   showMarkers: false,
@@ -627,6 +627,11 @@ var config = {
           duration: 2000,
           opacity: 0,
         },
+        {
+          layer: "highways",
+          duration: 2000,
+          opacity: 0,
+        },
       ],
       onChapterExit: [],
     },
@@ -660,11 +665,7 @@ var config = {
         },
       ],
       onChapterExit: [
-        {
-          layer: "highways",
-          duration: 2000,
-          opacity: 0,
-        },
+        
       ],
     },
     {
@@ -695,10 +696,20 @@ var config = {
           duration: 2000,
           opacity: 1,
         },
+        {
+          layer: "highways",
+          duration: 2000,
+          opacity: 1,
+        },
       ],
       onChapterExit: [
         {
           layer: "branch-roads",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "highways",
           duration: 2000,
           opacity: 0,
         },
@@ -901,22 +912,12 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "checkpoints",
-          duration: 2000,
-          opacity: 1,
-        },
-        {
           layer: "territorial-control",
           duration: 2000,
           opacity: 1,
         }
       ],
       onChapterExit: [
-        {
-          layer: "checkpoints",
-          duration: 2000,
-          opacity: 0,
-        },
         {
           layer: "territorial-control",
           duration: 2000,
