@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/daltonwb/cljprzlkt00w301pd1kq0gufp",
+  style: "mapbox://styles/daltonwb/cljpsaygq00ut01ns2sso7435",
   accessToken:
     "pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw",
   showMarkers: false,
@@ -623,7 +623,17 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "city-lines",
+          layer: "highways",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "road-number-shield",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "branch-roads",
           duration: 2000,
           opacity: 0,
         },
@@ -658,6 +668,21 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [
+        {
+          layer: "highways",
+          duration: 2000,
+          opacity: 1,
+        },
+        {
+          layer: "road-number-shield",
+          duration: 2000,
+          opacity: 1,
+        },
+        {
+          layer: "branch-roads",
+          duration: 2000,
+          opacity: 1,
+        },
         {
           layer: "highways",
           duration: 2000,
@@ -699,7 +724,7 @@ var config = {
         {
           layer: "highways",
           duration: 2000,
-          opacity: 1,
+          opacity: 0,
         },
       ],
       onChapterExit: [
@@ -709,7 +734,7 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "highways",
+          layer: "road-number-shield",
           duration: 2000,
           opacity: 0,
         },
