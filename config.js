@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/daltonwb/cljpsaygq00ut01ns2sso7435",
+  style: "mapbox://styles/daltonwb/cljrkyki900vi01qvam4i47qm",
   accessToken:
     "pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw",
   showMarkers: false,
@@ -421,11 +421,6 @@ var config = {
           duration: 2000,
           opacity: 0,
         },
-        {
-          layer: "all-roads",
-          duration: 2000,
-          opacity: 0,
-        },
       ],
     },
     {
@@ -449,7 +444,13 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "all-roads",
+          duration: 2000,
+          opacity: 1,
+        },
+      ],
       onChapterExit: [],
     },
     {
@@ -473,8 +474,40 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
+      onChapterEnter: [
+        {
+          layer: "all-roads",
+          duration: 2000,
+          opacity: 1,
+        },
+        {
+          layer: "checkpoints",
+          duration: 2000,
+          opacity: 1,
+        },
+        {
+          layer: "checkpoints-circle",
+          duration: 2000,
+          opacity: 1,
+        },
+    ],
+      onChapterExit: [
+        {
+          layer: "all-roads",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "checkpoints",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "checkpoints-circle",
+          duration: 2000,
+          opacity: 0,
+        },
+      ],
     },
     {
       id: "INTRO",
@@ -557,8 +590,19 @@ var config = {
           duration: 2000,
           opacity: 1,
         },
+        {
+          layer: "all-roads",
+          duration: 5000,
+          opacity: 1,
+        },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+        {
+          layer: "all-roads",
+          duration: 5000,
+          opacity: 0,
+        },
+      ],
     },
     {
       id: "photo02",
@@ -573,8 +617,7 @@ var config = {
         zoom: 11.48,
         pitch: 0.0,
         bearing: 0.0,
-        speed: 0.7,
-        bbox: [[43.96355, 13.5474, 44.11175, 13.62708]],
+        speed: 0.7
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -690,7 +733,11 @@ var config = {
         },
       ],
       onChapterExit: [
-        
+        {
+          layer: "road-number-shield",
+          duration: 2000,
+          opacity: 0,
+        },
       ],
     },
     {
@@ -786,12 +833,17 @@ var config = {
           opacity: 0.7,
         },
         {
-          layer: "yemen-cities",
+          layer: "detours",
+          duration: 4000,
+          opacity: 1,
+        },
+        {
+          layer: "detour-cities",
           duration: 2000,
           opacity: 1,
         },
         {
-          layer: "yemen-labels",
+          layer: "detour-cities-labels",
           duration: 2000,
           opacity: 1,
         },
@@ -803,12 +855,17 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "yemen-cities",
+          layer: "detours",
           duration: 2000,
           opacity: 0,
         },
         {
-          layer: "yemen-labels",
+          layer: "detour-cities",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "detour-cities-labels",
           duration: 2000,
           opacity: 0,
         },
@@ -838,13 +895,13 @@ var config = {
         {
           layer: "nightlights",
           duration: 2000,
-          opacity: 0.7,
+          opacity: 0.6,
         },
         {
-          layer: "all-taiz-roads",
+          layer: "all-roads",
           duration: 2000,
-          opacity: .5
-        }
+          opacity: 1,
+        },
       ],
       onChapterExit: [
         {
@@ -853,20 +910,20 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "all-taiz-roads",
+          layer: "all-roads",
           duration: 2000,
-          opacity: 0
-        }
+          opacity: 0,
+        },
       ],
     },
     {
-      id: "VIDEO",
+      id: "NARRATIVE-1",
       alignment: "full",
       hidden: false,
-      title: " ",
+      title: "",
       image: "",
       description:
-        '<span class="html-video-container"><video width="100%" height="100%" autoplay loop muted playsinline>&gt;<source src="images/hajat.mp4" poster="images/poster2.jpg type="video/mp4"></video></span>',
+      "<span class='html-video-container'><video width='100%' height='100%' autoplay loop muted playsinline>&gt;<source src='images/hajat.mp4' poster='images/poster2.jpg' type='video/mp4'></video></span>" + "<div class='video-overlay'>" + "<p>Second, they have made getting in and out of the city via treacherous ordeal for traders and ordinary people. All-too-regular traffic accidents on the few narrow and poorly-maintained roads connecting Taiz with the rest of the country cause regular shortages of food and fuel. Taizis traveling to Habwan for work, or to Aden for medical treatment, are forced to travel along long road routes. And third, it has cut off two of Yemen’s most important road routes, the N1 and N3, forcing travelers and traders to re-route along long, arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and the cost of living.</p></div>",
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,
@@ -882,40 +939,6 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [],
-      onChapterExit: [],
-    },
-    {
-      id: "NARRATIVE-1",
-      alignment: "full",
-      hidden: false,
-      title: " ",
-      image: "",
-      description:
-        "Second, they have made getting in and out of the city via treacherous ordeal for traders and ordinary people. All-too-regular traffic accidents on the few narrow and poorly-maintained roads connecting Taiz with the rest of the country cause regular shortages of food and fuel." +
-        '<div class="spacer"></div>' +
-        "Taizis traveling to Habwan for work, or to Aden for medical treatment, are forced to travel along long road routes." +
-        "And third, it has cut off two of Yemen’s most important road routes, the N1 and N3, forcing travelers and traders to re-route along long, arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and the cost of living.",
-      location: {
-        center: [44.07033, 13.6427],
-        zoom: 11.48,
-        pitch: 0.0,
-        bearing: 0.0,
-        speed: 0.7,
-        bbox: [
-          [43.866, 13.5085],
-          [44.2447, 13.7447],
-        ],
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "territorial-control",
-          duration: 2000,
-          opacity: 0,
-        },
-      ],
       onChapterExit: [],
     },
     {
@@ -937,14 +960,49 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
+          layer: "all-roads",
+          duration: 2000,
+          opacity: 1,
+        },
+        {
+          layer: "checkpoints",
+          duration: 2000,
+          opacity: 1,
+        },
+        {
           layer: "territorial-control",
           duration: 2000,
           opacity: 1,
-        }
+        },
+        {
+          layer: "yemen-cities",
+          duration: 2000,
+          opacity: 1,
+        },
+        {
+          layer: "yemen-labels",
+          duration: 2000,
+          opacity: 1,
+        },
       ],
       onChapterExit: [
         {
           layer: "territorial-control",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "yemen-cities",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "yemen-labels",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "all-roads",
           duration: 2000,
           opacity: 0,
         },

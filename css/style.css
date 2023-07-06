@@ -466,18 +466,19 @@ p.top-narrative {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  padding: 5% 35%;
+  padding: 0;
 }
 
-@media (max-width: 1920px) {
-  #NARRATIVE-1 .light {
-    padding: 5% 30%;
-  }
+.video-overlay {
+  margin-top: -20%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  backdrop-filter: blur(5px);
 }
 
-@media (max-width: 425px) {
-  #NARRATIVE-1 .light {
-    padding: 5% 8%;
+@media (max-width: 1024px) {
+  .video-overlay {
+    margin-top: -25%;
   }
 }
 
