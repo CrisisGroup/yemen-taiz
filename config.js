@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/daltonwb/cljrkyki900vi01qvam4i47qm",
+  style: "mapbox://styles/daltonwb/cljx439gi01q101pa93p9bg9a",
   accessToken:
     "pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw",
   showMarkers: false,
@@ -960,49 +960,54 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "all-roads",
+          layer: "territory-final",
+          duration: 2000,
+          opacity: .7,
+        },
+        {
+          layer: "all-roads-final",
           duration: 2000,
           opacity: 1,
         },
         {
-          layer: "checkpoints",
+          layer: "checkpoints-final",
           duration: 2000,
           opacity: 1,
         },
         {
-          layer: "territorial-control",
+          layer: "city-dots-final",
           duration: 2000,
-          opacity: 1,
+          opacity: .8,
         },
         {
-          layer: "yemen-cities",
-          duration: 2000,
-          opacity: 1,
-        },
-        {
-          layer: "yemen-labels",
+          layer: "city-labels-final",
           duration: 2000,
           opacity: 1,
         },
       ],
       onChapterExit: [
         {
-          layer: "territorial-control",
+          layer: "territory-final",
           duration: 2000,
           opacity: 0,
         },
         {
-          layer: "yemen-cities",
+          layer: "all-roads-final",
           duration: 2000,
           opacity: 0,
         },
         {
-          layer: "yemen-labels",
+          layer: "checkpoints-final",
           duration: 2000,
           opacity: 0,
         },
         {
-          layer: "all-roads",
+          layer: "city-dots-final",
+          duration: 2000,
+          opacity: 0,
+        },
+        {
+          layer: "city-labels-final",
           duration: 2000,
           opacity: 0,
         },
