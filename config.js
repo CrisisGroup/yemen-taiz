@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/daltonwb/cljx439gi01q101pa93p9bg9a",
+  style: "mapbox://styles/daltonwb/cljyq71w500ei01qg5j021az0",
   accessToken:
     "pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw",
   showMarkers: false,
@@ -13,7 +13,7 @@ var config = {
   subtitle: "",
   byline: "",
   footer:
-    '<h4>Credits</h4><strong>Lead Contributors</strong>: Peter Salisbury<br /><strong>Visualizations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Kevin Mazur and Veena Ali-Khan<br /><br /><h4>Data Sources</h4> <div class="data-sources"><br /><br /></div><h4></h4><a href="https://www.crisisgroup.org/legal" target="_blank" style="color: #b65d61;">Privacy Policy & Legal</a></h4>',
+    '<h4>Credits</h4><strong>Lead Contributor</strong>: Peter Salisbury<br /><strong>Visualisations & Design</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Data & Research Lead</strong>: Kevin Mazur and Veena Ali-Khan<br /><br /><h4>Data Sources</h4> <div class="data-sources"><br /><br /></div><h4></h4><a href="https://www.crisisgroup.org/legal" target="_blank" style="color: #b65d61;">Privacy Policy & Legal</a></h4>',
   chapters: [
     {
       id: "PREFACE-1",
@@ -88,11 +88,11 @@ var config = {
       title: "",
       image: "",
       description:
-        "Unlike many of its Arab neighbours, Yemen is a highly rural country. The majority of Yemen’s population live in rural areas that host around 140,000 towns, villages and small settlements." +
+        "Unlike many of its Arab neighbours, Yemen is a highly rural country. The majority of <u class='grau'>Yemen’s population</u> live in rural areas that host around 140,000 towns, villages and small settlements." +
         '<div class="spacer"></div>' +
         "Yemen is also heavily <u class='red'>import dependent</u>: 90% of wheat and all rice, staples in the national diet, are imported from abroad." +
         '<div class="spacer"></div>' +
-        "<strong>This makes road transportation essential to the economic and social health of ordinary Yemenis.</strong>",
+        "<strong>This makes <u class='green'>road transportation</u> essential to the economic and social health of ordinary Yemenis.</strong>",
       location: {
         center: [47.4644, 15.8624],
         zoom: 4,
@@ -364,7 +364,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "In turn, the fighting has led to a severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the border routes between Saudi Arabia and western Yemen, once vital trade routes between the two countries, being closed off.",
+        "In turn, the fighting has led to a severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the border routes between Saudi Arabia and western Yemen, once vital trade routes between the two countries, being <u class='red'>closed off</u>.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -460,7 +460,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Compounding these barriers to movement, beyond the frontlines major road routes are dotted with checkpoints where uncoordinated armed groups charge commercial and passenger traffic a litany of fees, increasing the cost of travel.",
+        "Compounding these barriers to movement, beyond the frontlines major road routes are <u class='red'>dotted with checkpoints</u> where uncoordinated armed groups charge commercial and passenger traffic a litany of fees, increasing the cost of travel.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -518,11 +518,7 @@ var config = {
       description:
         "No part of Yemen has been worse affected by the loss of road access than Taiz city." +
         '<div class="spacer"></div>' +
-        "Before the ongoing civil war broke out in early 2015, Taiz City was Yemen’s second most populous urban centre." +
-        "<br /><br />" +
-        "<strong>Explore the map by clicking and dragging your pointer, or use the controls in the top right. Throughout this story, you can freely explore the maps where there is a right arrow. &#8594;" +
-        "<br /><br />" +
-        "Or scroll down to continue. &#8595;</strong>",
+        "Before the ongoing civil war broke out in early 2015, Taiz City was Yemen’s second most populous urban centre.",
       location: {
         center: [47.4644, 15.8624],
         zoom: 4,
@@ -535,7 +531,7 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: true,
-      callback: "enableFreetime",
+      callback: "",
       onChapterEnter: [
         {
           layer: "yemen-cities",
@@ -573,7 +569,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Taiz was Yemen’s prewar commercial and cultural capital. It was also an important economic and transportation hub.",
+        "Taiz was Yemen’s prewar commercial and cultural capital. It was also an important <u class='green'>economic and transportation hub</u>.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -583,7 +579,7 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
-      callback: "disableFreetime",
+      callback: "",
       onChapterEnter: [
         {
           layer: "taiz-label",
@@ -617,7 +613,11 @@ var config = {
         zoom: 11.48,
         pitch: 0.0,
         bearing: 0.0,
-        speed: 0.7
+        speed: 0.7,
+        bbox: [
+          [43.866, 13.5085],
+          [44.2447, 13.7447],
+        ],
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -695,7 +695,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "The city is nestled between two of Yemen’s most important road routes. The N1 north-south highway, which connects the southern port of Aden with Sanaa, Yemen’s capital, passing through Hawban along the way. The N3 east-west highway that connects Taiz and the N1 with the Red Sea coast, including another major port, Hodeida",
+        "The city is nestled between two of Yemen’s most important road routes. The <strong>N1 north-south highway</strong>, which connects the southern port of Aden with Sanaa, Yemen’s capital, passing through Hawban along the way. The <strong>N3 east-west highway</strong> that connects Taiz and the N1 with the Red Sea coast, including another major port, Hodeida.",
       location: {
         center: [28.21862, 7.5142],
         zoom: 5,
@@ -792,7 +792,7 @@ var config = {
       alignment: "center",
       hidden: false,
       title: "",
-      image: "images/conclusion.jpg",
+      image: "images/taiz-conflict.jpg",
       description:
         "<h3>Conflict in Taiz</h3>" + "Taiz city has been badly affected by the war. In March 2015 the Huthis, who had seized Sanaa by force the previous September, attempted to take over the city." + "<div class='spacer'></div>" + "Forces aligned with Yemen’s internationally recognized government recovered control of Taiz city centre in mid 2015. But the Huthis retained territory to the city’s north, east, and west, including the road routes that connected the city to the N1 and N3 highways.",
       location: {
@@ -815,13 +815,13 @@ var config = {
       title: " ",
       image: "",
       description:
-        "The only way in and out of the city is now a small road that connects the city’s southwest to a network of winding mountain roads. After exiting the city, travelers can move on to Aden, to Huthi-controlled Hawban or to Mokha on the Red Sea coast via a series of challenging, poorly maintained routes.",
+        "The only way in and out of the city is now a small road that connects the city’s southwest to a network of winding mountain roads.",
       location: {
         center: [44.40431, 13.24581],
         zoom: 9,
         pitch: 0,
         bearing: 0,
-        speed: 0.4,
+        bbox: [[43.70485, 13.14014],[44.56582, 13.69476]],
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -880,7 +880,7 @@ var config = {
       description:
         "Fighting, frozen frontlines and severed road access in and around Taiz city have had three effects on life in Taiz city and across Yemen." +
         '<div class="spacer"></div>' +
-        "First, they have throttled the economy of Taiz city and made the city one of the most expensive places to live in Yemen. Satellite images of nighttime light can be used as a rough measure of economic output. Remotely captured date from Taiz City shows that the local economy cratered at the beginning of the war and is yet to recover to prewar levels, unlike neighbouring areas like the Huthi-held industrial hub of Hawban.",
+        "First, they have <strong>throttled the economy</strong> of Taiz city and made the city one of the most expensive places to live in Yemen. Satellite images of <u class='red'>nighttime light</u> can be used as a rough measure of economic output. Remotely captured date from Taiz City shows that the local economy cratered at the beginning of the war and is yet to recover to prewar levels, unlike neighbouring areas like the Huthi-held industrial hub of Hawban.",
       location: {
         center: [44.056635, 13.572282],
         zoom: 11,
@@ -898,7 +898,7 @@ var config = {
           opacity: 0.6,
         },
         {
-          layer: "all-roads",
+          layer: "all-roads-grey",
           duration: 2000,
           opacity: 1,
         },
@@ -910,10 +910,35 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "all-roads",
+          layer: "all-roads-grey",
           duration: 2000,
           opacity: 0,
         },
+      ],
+    },
+    {
+      id: "PRENARRATIVE",
+      alignment: "center",
+      hidden: false,
+      title: "",
+      image: "",
+      description:
+        "Second, they have made getting in and out of the city a <strong>treacherous ordeal for traders and ordinary people</strong>. All-too-regular traffic accidents on the few narrow and <u class='red'>poorly-maintained roads</u> connecting Taiz with the rest of the country cause regular shortages of food and fuel. Taizis traveling to Habwan for work, or to Aden for medical treatment, are forced to travel along long road routes. And third, it has cut off two of Yemen’s most important road routes, the N1 and N3, forcing travelers and traders to re-route along long, arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and the cost of living.",
+      location: {
+        center: [44.056635, 13.572282],
+        zoom: 11,
+        pitch: 51.5,
+        bearing: 0,
+        speed: 0.7,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+
+      ],
+      onChapterExit: [
+
       ],
     },
     {
@@ -923,7 +948,7 @@ var config = {
       title: "",
       image: "",
       description:
-      "<span class='html-video-container'><video width='100%' height='100%' autoplay loop muted playsinline>&gt;<source src='images/hajat.mp4' poster='images/poster2.jpg' type='video/mp4'></video></span>" + "<div class='video-overlay'>" + "<p>Second, they have made getting in and out of the city via treacherous ordeal for traders and ordinary people. All-too-regular traffic accidents on the few narrow and poorly-maintained roads connecting Taiz with the rest of the country cause regular shortages of food and fuel. Taizis traveling to Habwan for work, or to Aden for medical treatment, are forced to travel along long road routes. And third, it has cut off two of Yemen’s most important road routes, the N1 and N3, forcing travelers and traders to re-route along long, arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and the cost of living.</p></div>",
+      "<span class='html-video-container'><video width='100%' height='100%' autoplay loop muted playsinline>&gt;<source src='images/hajat.mp4' poster='images/poster2.jpg' type='video/mp4'></video></span>",
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,
@@ -948,7 +973,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "Adding to the challenge of travel, the forces who control the city are not aligned with other anti-Huthi groups who control Yemen’s south or territory along the Red Sea coast. This tangle of forces, a profusion of poorly-managed checkpoints along the different road routes caused constant headaches for travelers who often have to pay fees at dozens of these checkpoints.",
+        "Adding to the challenge of travel, the forces who control the city are not aligned with other anti-Huthi groups who control Yemen’s south or territory along the Red Sea coast. This tangle of forces, a profusion of <u class='red'>poorly-managed checkpoints</u> along the different road routes <strong>caused constant headaches for travelers who often have to pay fees</strong> at dozens of these checkpoints.",
       location: {
         center: [45.5241, 15.08855],
         zoom: 6.57,
@@ -962,10 +987,10 @@ var config = {
         {
           layer: "territory-final",
           duration: 2000,
-          opacity: .7,
+          opacity: .4,
         },
         {
-          layer: "all-roads-final",
+          layer: "all-roads-grey",
           duration: 2000,
           opacity: 1,
         },
@@ -992,7 +1017,7 @@ var config = {
           opacity: 0,
         },
         {
-          layer: "all-roads-final",
+          layer: "all-roads-grey",
           duration: 2000,
           opacity: 0,
         },
