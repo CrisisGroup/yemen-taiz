@@ -805,7 +805,11 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [],
+      onChapterEnter: [        {
+        layer: "road-draw-line",
+        duration: 2000,
+        opacity: 0,
+      },],
       onChapterExit: [],
     },
     {
@@ -832,6 +836,30 @@ var config = {
           duration: 2000,
           opacity: 0.7,
         },
+      ],
+      onChapterExit: [
+ 
+      ],
+    },
+    {
+      id: "08B",
+      alignment: "right",
+      hidden: false,
+      title: " ",
+      image: "",
+      description:
+        "After exiting the city, travelers can move on to Aden, to Huthi-controlled Hawban or to Mokha on the Red Sea coast via a series of challenging, poorly maintained routes.",
+      location: {
+        center: [44.40431, 13.24581],
+        zoom: 9,
+        pitch: 0,
+        bearing: 0,
+        bbox: [[42.70432, 12.52876], [45.50441, 13.89066]],
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
         {
           layer: "detours",
           duration: 4000,
