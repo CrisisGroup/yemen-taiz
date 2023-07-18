@@ -607,7 +607,7 @@ var config = {
       title: "",
       image: "images/hawban_sat.jpg",
       description:
-        "<h3>Hawban's Industrial Sector</h3>" + "Hawban, to the city’s northeast, was the engine of Taiz’s economy. It was one of the country’s busiest industrial zones.",
+        "<h3>Hawban’s Industrial Sector</h3>" + "Hawban, to the city’s northeast, was the engine of Taiz’s economy. It was one of the country’s busiest industrial zones.",
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,
@@ -1015,7 +1015,7 @@ var config = {
         {
           layer: "territory-final",
           duration: 2000,
-          opacity: .4,
+          opacity: .3,
         },
         {
           layer: "all-roads-grey",
