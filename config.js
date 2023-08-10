@@ -9,7 +9,7 @@ var config = {
   projection: "mercator",
   use3dTerrain: false,
   title:
-    '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster1.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp"><strong>Road closures in Yemen have deepened a cost-of-living crisis, created huge barriers to movement for Yemenis seeking medical treatment and work in other parts of the country, and deepened social and political divides. Reopening them could lead to significant improvements in the humanitarian and political situation. But doing so will not be easy.</strong></p><p class="hedp">Taiz city is a case study for the cost and challenge of road closures in Yemen. The city has been partially besieged for much of the last seven years. Local and international initiatives have done little to change the status quo. Most recently, in April 2022, Taiz’s roads were included as a confidence-building measure in a UN-brokered nationwide truce. But little progress was made before the truce lapsed in October 2022.</p><p class="hedp">The good news is that Yemen’s roads are now part of nationwide negotiations. The bad news is that reopening them, either as part of a truce or ceasefire or a national political settlement, will not be easy. Control of roads is embedded in the parties’ military and political strategies. Preventing road access is a tool for limiting rivals’ scope for military advance, and economic activity in rival zones of control.</p><p class="hedp" id="center">Crisis Group tells the story of the power struggle for Taiz and how that fits into Yemen’s war for its roads.</p><a id="freeExplore" href="#PREFACE-1"> BEGIN &nbsp;&nbsp; &#8595; </a>',
+    '<a href="https://www.crisisgroup.org" target="_blank"><img id="icg" src="images/icg-oj.png" /></a><br /><video id="background-video" autoplay loop muted poster="images/poster1.jpg"><source src="images/aerial.mp4" type="video/mp4"></video><h1>Taiz in a Knot</h1><p class="hedp"><strong>Road closures in Yemen have deepened a cost-of-living crisis, created huge barriers to movement for Yemenis seeking medical treatment and work in other parts of the country, and deepened social and political divides. Reopening them could lead to significant improvements in the humanitarian and political situation. But doing so will not be easy.</strong></p><p class="hedp">Taiz city is a case study for the cost and challenge of road closures in Yemen. The city has been partially besieged for much of the last seven years. Local and international initiatives have done little to change the status quo. Most recently, in April 2022, the reopening of Taiz’s roads was included as a proposed confidence-building measure in a UN-brokered nationwide truce. But little progress was made before the truce lapsed in October 2022.</p><p class="hedp">The good news is that Yemen’s roads are now part of nationwide negotiations. The bad news is that reopening them, either as part of a truce or ceasefire or a national political settlement, will not be easy. Control of roads is embedded in the parties’ military and political strategies. Preventing road access is a tool for limiting rivals’ scope for military advance and economic activity in their respective zones of control.</p><p class="hedp" id="center">Crisis Group tells the story of the power struggle for Taiz and how that fits into Yemen’s war for its roads.</p><a id="freeExplore" href="#PREFACE-1"> BEGIN &nbsp;&nbsp; &#8595; </a>',
   subtitle: "",
   byline: "",
   footer:
@@ -88,11 +88,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Unlike many of its Arab neighbours, Yemen is a highly rural country. The majority of <u class='grau'>Yemen’s population</u> live in rural areas that host around 140,000 towns, villages and small settlements." +
-        '<div class="spacer"></div>' +
-        "Yemen is also heavily <u class='red'>import dependent</u>: 90% of wheat and all rice, staples in the national diet, are imported from abroad." +
-        '<div class="spacer"></div>' +
-        "<strong>This makes <u class='green'>road transportation</u> essential to the economic and social health of ordinary Yemenis.</strong>",
+        "Unlike many of its Arab neighbours, Yemen is a highly rural country. The majority of <u class='grau'>Yemen’s population</u> live in rural areas that host around 140,000 towns, villages and small settlements. <u class='green'>The roads connecting them</u> are <strong>an essential lifeline for the local population.</strong>",
       location: {
         center: [47.4644, 15.8624],
         zoom: 4,
@@ -138,7 +134,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "The most important of these roads were three north-south highways.",
+        "The most important of these roads are three north-south highways.",
       location: {
         center: [47.4644, 15.8624],
         zoom: 4,
@@ -173,7 +169,7 @@ var config = {
       hidden: false,
       title: "",
       image: "",
-      description: "Two east-west highway routes.",
+      description: "Two east-west highways.",
       location: {
         center: [47.4644, 15.8624],
         zoom: 4,
@@ -313,7 +309,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Frontline flighting has clustered around the borders between areas controlled by the Huthi rebels and their rivals; and around the main roads connecting the different areas.",
+        "Frontline fighting has clustered around the borders between areas controlled by the Huthi rebels and their rivals, and around the main roads connecting the different areas.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -364,7 +360,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "In turn, the fighting has led to a severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the border routes between Saudi Arabia and western Yemen, once vital trade routes between the two countries, being <u class='red'>closed off</u>.",
+        "In turn, the fighting has led to a severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the border crossings between Saudi Arabia and western Yemen, once vital trade routes between the two countries, being <u class='red'>closed off.</u>",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -460,7 +456,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Compounding these barriers to movement, beyond the frontlines major road routes are <u class='red'>dotted with checkpoints</u> where uncoordinated armed groups charge commercial and passenger traffic a litany of fees, increasing the cost of travel.",
+        "Compounding these barriers to movement, major roads beyond the frontlines are <u class='red'>dotted with checkpoints</u>, where uncoordinated armed groups extort fees from commercial and passenger traffic, significantly increasing the cost of travel.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -695,7 +691,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "The city is nestled between two of Yemen’s most important road routes. The <strong>N1 north-south highway</strong>, which connects the southern port of Aden with Sanaa, Yemen’s capital, passing through Hawban along the way. The <strong>N3 east-west highway</strong> that connects Taiz and the N1 with the Red Sea coast, including another major port, Hodeida.",
+        "Taiz is nestled between two of Yemen’s most important roads. The <strong>N1 north-south highway</strong> connects the southern port of Aden with Sanaa, Yemen’s capital, passing through Hawban. The <strong>N3 east-west highway</strong> connects Taiz and the N1 with the Red Sea coast, including another major port, Hodeida.",
       location: {
         center: [28.21862, 7.5142],
         zoom: 5,
@@ -747,7 +743,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "Taiz city itself connects to these two highways via three branch roads that move out of the city’s north, east and west.",
+        "The city centre connects to these two highways via three branch roads to the north, east and west.",
       location: {
         center: [28.21862, 7.5142],
         zoom: 5,
@@ -794,7 +790,7 @@ var config = {
       title: "",
       image: "images/taiz-conflict.jpg",
       description:
-        "<h3>Conflict in Taiz</h3>" + "Taiz city has been badly affected by the war. In March 2015 the Huthis, who had seized Sanaa by force the previous September, attempted to take over the city." + "<div class='spacer'></div>" + "Forces aligned with Yemen’s internationally recognized government recovered control of Taiz city centre in mid 2015. But the Huthis retained territory to the city’s north, east, and west, including the road routes that connected the city to the N1 and N3 highways.",
+        "<h3>Conflict in Taiz</h3>" + "Taiz city has been badly affected by the war. In March 2015, the Huthis, who had seized Sanaa by force the previous September, attempted to take over this city as well, but forces aligned with Yemen’s internationally recognised government recovered control of Taiz city centre in mid-2015." + "<div class='spacer'></div>" + "Despite their setback, the Huthis retained territory to the city’s north, east and west, including the roads that connect the city to the N1 and N3 highways.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -819,7 +815,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "The only way in and out of the city is now a small road that connects the city’s southwest to a network of winding mountain roads.",
+        "Today, the only way in and out of the city is by a small road that connects the city’s southwest to a network of winding mountain roads.",
       location: {
         center: [44.40431, 13.24581],
         zoom: 9,
@@ -848,7 +844,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "After exiting the city, travelers can move on to Aden, to Huthi-controlled Hawban or to Mokha on the Red Sea coast via a series of challenging, poorly maintained routes.",
+        "After exiting the city, travelers can move on to Aden, Huthi-controlled Hawban or Mokha on the Red Sea coast via a series of challenging, poorly maintained roads.",
       location: {
         center: [44.40431, 13.24581],
         zoom: 9,
@@ -906,9 +902,9 @@ var config = {
       title: "",
       image: "",
       description:
-        "Fighting, frozen frontlines and severed road access in and around Taiz city have had three effects on life in Taiz city and across Yemen." +
+        "The ongoing fighting, frozen frontlines and severed road access in and around Taiz city have had three effects on life in the city and across Yemen." +
         '<div class="spacer"></div>' +
-        "First, they have <strong>throttled the economy</strong> of Taiz city and made the city one of the most expensive places to live in Yemen. Satellite images of <u class='red'>nighttime light</u> can be used as a rough measure of economic output. Remotely captured date from Taiz City shows that the local economy cratered at the beginning of the war and is yet to recover to prewar levels, unlike neighbouring areas like the Huthi-held industrial hub of Hawban.",
+        "First, they have <strong>throttled the city’s economy</strong> and made it one of the most expensive places to live in Yemen. Satellite images of <u class='red'>nighttime light</u> can be used as a rough measure of economic output. Remotely captured data from the city shows that the local economy cratered at the beginning of the war and is yet to recover to prewar levels, unlike neighbouring areas such as Hawban.",
       location: {
         center: [44.056635, 13.572282],
         zoom: 11,
@@ -951,7 +947,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Second, they have made getting in and out of the city a <strong>treacherous ordeal for traders and ordinary people</strong>. All-too-regular traffic accidents on the few narrow and <u class='red'>poorly-maintained roads</u> connecting Taiz with the rest of the country cause regular shortages of food and fuel. Taizis traveling to Habwan for work, or to Aden for medical treatment, are forced to travel along long road routes. And third, it has cut off two of Yemen’s most important road routes, the N1 and N3, forcing travelers and traders to re-route along long, arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and the cost of living.",
+        "Second, they have made getting in and out of the city a <strong>treacherous ordeal for traders and ordinary people</strong>. All-too-regular traffic accidents on the few narrow and <u class='red'>poorly-maintained roads</u> connecting Taiz with the rest of the country cause regular shortages of food and fuel. Taizis going to work in Habwan or to Aden for medical treatment are forced to make major detours, significantly prolonging travel." + "<div class='spacer'></div>" + "And third, it has cut off two of Yemen’s most important arteries, the N1 and N3, forcing travelers and traders to undertake extended travel along arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and thus the cost of living.",
       location: {
         center: [44.056635, 13.572282],
         zoom: 11,
@@ -1001,7 +997,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "Adding to the challenge of travel, the forces who control the city are not aligned with other anti-Huthi groups who control Yemen’s south or territory along the Red Sea coast. This tangle of forces, a profusion of <u class='red'>poorly-managed checkpoints</u> along the different road routes <strong>caused constant headaches for travelers who often have to pay fees</strong> at dozens of these checkpoints.",
+        "Adding to the challenge of travel, the forces that control the city are not aligned with other anti-Huthi groups that control Yemen’s south or territory along the Red Sea coast. This tangle of forces and a profusion of <u class='red'>checkpoints</u> run by armed groups that often <strong>extort, detain or assault passengers</strong> are a constant headache for travelers.",
       location: {
         center: [45.5241, 15.08855],
         zoom: 6.57,
@@ -1075,26 +1071,19 @@ var config = {
       description:
         '<img src="images/conclusion.jpg" />' +
         '<div class="spacer"></div>' +
-        "Seeking to alleviate Taizis’ suffering, local mediators and latterly the UN have sought to negotiate the reopening of at least some roads connecting Taiz with the rest of the country. But their efforts have repeatedly stalled – because, local mediators say, the Huthis and the government have sought to gain the military upper hand rather than negotiate access." +
+        "Seeking to alleviate Taizis’ suffering, local mediators and latterly the UN have sought to negotiate the reopening of at least some roads connecting Taiz with the rest of the country. But their efforts have stalled repeatedly because, local mediators say, the Huthis and the government have sought to gain the military upper hand rather than grant access. Many Taizis have come to feel abandoned &dash; by local authorities, the Yemeni government and the UN." +
         '<div class="spacer"></div>' +
-        "Many Taizis have come to feel abandoned, by local authorities, by the internationally recognized government, and by the UN, which has made sporadic efforts to reopen Taiz’s roads." +
+        "The severing of Taiz’s roads registered relatively low on the international list of priorities until recently. Successive UN envoys largely sidestepped the issue, seeing it as a distraction from forging a national peace that would eventually undo road closures. Even when the UN included road access in its initiatives, it did little to follow up. When the current UN envoy, Hans Grundberg, visited Taiz city in November 2021, he was the first diplomat of his rank to do so since the war began." +
         '<div class="spacer"></div>' +
-        "The severing of Taiz’s roads registered relatively low on the international list of priorities until recently. Successive UN envoys largely sidestepped the issue, seeing it as a distraction from a national peace that would eventually unravel road closures. Even when road access was included in UN initiatives there was little follow-up on the issue." +
+        "Taiz’s status changed this April when Yemen’s government added roads to a list of proposed confidence-building measures tied to a UN-brokered nationwide truce. Other measures included reopening Huthi-controlled Sanaa International Airport to international commercial flights and increasing the number of fuel shipments that enter the Huthi-held port of Hodeida. Although there was progress on these last two measures -- to the Huthis’ benefit -- there has been no tangible progress on Taiz." +
         '<div class="spacer"></div>' +
         '<img src="images/hans.jpg" />' +
         '<div class="spacer"></div>' +
-        "When the current UN envoy Hans Grundberg visited Taiz city in November 2021, he was the first diplomat of his rank to do so since the war began." +
-        "Taiz’s status changed this April when Yemen’s government added its roads to a list of confidence-building measures tied to the UN-brokered nationwide truce." +
+        "Negotiations have zeroed in on four roads in and around Taiz city. While the government initially demanded to reopen all of the major roads, the UN proposed that only certain roads be opened. The main sticking point is one of these. The UN and the Yemeni government want the Huthis to open it. The Huthis refuse, and say they will instead open three relatively minor roads that would reduce travel times but would still pose a challenge for buses and heavy vehicles." +
         '<div class="spacer"></div>' +
-        "Other measures included reopening Huthi-controlled Sanaa International Airport to international commercial flights and increasing the number of fuel shipments that enter the Huthi-held port of Hodeida." +
+        "Physical roadblocks around Taiz are now one of the main political barriers to sustaining and expanding the truce the UN negotiated in April 2022." +
         '<div class="spacer"></div>' +
-        "Although there was progress on these last two measures - to the Huthis’ benefit - there has been no tangible progress on Taiz." +
-        '<div class="spacer"></div>' +
-        "Negotiations have narrowed down to four roads in and around Taiz city. The main sticking point is the only one of the three major connecting roads to remain on the table. The UN and Yemen’s internationally recognised government want the Huthis to open it." +
-        '<div class="spacer"></div>' +
-        "The Huthis refuse, and say they will instead open three relatively minor roads that would reduce travel times but would still pose a challenge for buses or heavy vehicles." +
-        '<div class="spacer"></div>' +
-        "Physical roadblocks around Taiz are now a political barrier to sustaining and expanding the truce the UN negotiated in April 2022. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "[POLICY CONCLUSION TK] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       location: {
         center: [45.5241, 15.08855],
         zoom: 6.57,
