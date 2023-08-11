@@ -269,7 +269,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Over the course of the conflict, Yemen has fragmented into multiple zones of political-military control.",
+        "Over the course of the conflict, Yemen has <strong>fragmented into multiple zones</strong> of political-military control.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -309,7 +309,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Frontline fighting has clustered around the borders between areas controlled by the Huthi rebels and their rivals, and around the main roads connecting the different areas.",
+        "<u class='black'>Frontline fighting</u> has clustered around the borders between areas controlled by the Huthi rebels and their rivals, and around the main roads connecting the different areas.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -568,7 +568,7 @@ var config = {
         "Taiz was Yemen’s prewar commercial and cultural capital. It was also an important <u class='green'>economic and transportation hub</u>.",
       location: {
         center: [44.0183, 13.57773],
-        zoom: 13.7,
+        zoom: 12,
         pitch: 0.0,
         bearing: 0.0,
         speed: 0.5,
@@ -587,11 +587,21 @@ var config = {
           duration: 5000,
           opacity: 1,
         },
+        {
+          layer: "hawban",
+          duration: 2000,
+          opacity: 1,
+        },
       ],
       onChapterExit: [
         {
           layer: "all-roads",
           duration: 5000,
+          opacity: 0,
+        },
+        {
+          layer: "hawban",
+          duration: 2000,
           opacity: 0,
         },
       ],
@@ -897,7 +907,7 @@ var config = {
     },
     {
       id: "09",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "",
       image: "",
@@ -947,7 +957,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Second, they have made getting in and out of the city a <strong>treacherous ordeal for traders and ordinary people</strong>. All-too-regular traffic accidents on the few narrow and <u class='red'>poorly-maintained roads</u> connecting Taiz with the rest of the country cause regular shortages of food and fuel. Taizis going to work in Habwan or to Aden for medical treatment are forced to make major detours, significantly prolonging travel." + "<div class='spacer'></div>" + "And third, it has cut off two of Yemen’s most important arteries, the N1 and N3, forcing travelers and traders to undertake extended travel along arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and thus the cost of living.",
+        "Second, they have made getting in and out of the city a <strong>treacherous ordeal for traders and ordinary people</strong>. All-too-regular traffic accidents on the few narrow and <u class='red'>poorly-maintained roads</u> connecting Taiz with the rest of the country cause regular shortages of food and fuel. Taizis going to work in Habwan or to Aden for medical treatment are forced to make major detours, significantly prolonging travel." + "<div class='spacer'></div>" + "And third, it has <strong>cut off two of Yemen’s most important arteries</strong>, the N1 and N3, forcing travelers and traders to undertake extended travel along arduous routes through contested territory in Yemen’s east and west, increasing the risks and cost of travel, and thus the cost of living.",
       location: {
         center: [44.056635, 13.572282],
         zoom: 11,
@@ -972,7 +982,7 @@ var config = {
       title: "",
       image: "",
       description:
-      "<span class='html-video-container'><video width='100%' height='100%' autoplay loop muted playsinline>&gt;<source src='images/hajat.mp4' poster='images/poster2.jpg' type='video/mp4'></video></span>",
+      "<span class='html-video-container'><video width='100%' height='100%' autoplay loop muted playsinline>&gt;<source src='images/hajat.mp4' poster='images/poster2.jpg' type='video/mp4'></video></span>" + "<div class='video-overlay'>" + "<p>The Hajat Al Abad Pass is one of the most dangerous one of these roads. Because of its steep grade and sharp switchbacks, it commonly is blocked in major accidents.</p></div>",
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,

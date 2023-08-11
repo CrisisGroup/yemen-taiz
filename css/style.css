@@ -621,6 +621,7 @@ ul {
 
 .legend h4 {
   color: #000;
+  margin: 0;
 }
 
 .left-legend {
@@ -664,9 +665,15 @@ ul {
   text-underline-offset: 4px;
 }
 
+.black {
+  text-decoration: underline solid #000 4px;
+  text-underline-offset: 4px;
+}
+
 ul.legend-ul {
   padding: 0;
   list-style-type: none;
+  margin: 0;
 }
 
 ul.legend-ul li {

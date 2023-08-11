@@ -90,18 +90,35 @@
         </div>
       </li>
       <li>
-        <div><span style='background-color: rgba(163, 51, 57, 0.2); border: solid 1px #616162;'></span>Shebwa Defence
-          Forces & Giants Brigades </div>
+        <div><span style='background-color: #c37f85; border: solid 1px #616162;'></span>National Resistance Forces
+        </div>
       </li>
       <li>
-        <div><span style='background-color: #a33339; border: solid 1px #616162;'></span>National Resistance Forces
-        </div>
+        <div><span style='background-color: #dab7bb; border: solid 1px #616162;'></span>Hadramawt Elite Forces </div>
+      </li>
+      <li>
+        <div><span style='background-color: #e7d7dc; border: solid 1px #616162;'></span>Shebwa Defence
+          Forces & Giants Brigades </div>
       </li>
       <li>
         <div><span style='background-color: #000; border: solid 1px #616162;'></span>Flashpoints </div>
       </li>
+    </ul>
+    <br />
+    <h5><strong>Data</strong>: <a href='https://www.internal-displacement.org/database/displacement-data'
+        target='_blank'>IDMC</a></h5>
+  </div>
+
+  <div id='light-legend' class='legend right-legend'>
+    <h4>Recorded Levels of Light</h4>
+    <ul class='legend-ul'>
       <li>
-        <div><span style='background-color: hsla(357, 52%, 42%, 0.33); border: solid 1px #616162;'></span>Hadramawt Elite Forces </div>
+        <div><span style="color: #d1999c; font-size: 45px;">&#x2B22;</span>  <span style="vertical-align: super;
+          width: auto;">Less light ↓</span></div>
+      </li>
+      <li>
+        <div><span style="color: #ad484e; font-size: 45px;">&#x2B22;</span>  <span style="vertical-align: super;
+          width: auto;">More light ↑</span></div>
       </li>
     </ul>
     <br />
@@ -9461,10 +9478,16 @@
           var chapter = config.chapters.find(chap => chap.id === response.element.id);
           var chapterid = chapter.id;
 
-          if (chapterid == "PREFACE-5" || chapterid == "11") {
+          if (chapterid == "PREFACE-5") {
             $("#territory-legend").show("slow");
           } else
             $("#territory-legend").hide("fast");
+
+            if (chapterid == "09") {
+            $("#light-legend").show("slow");
+          } else
+            $("#light-legend").hide("fast");
+
 
           response.element.classList.add('active');
           // change opacity of certain blocks
