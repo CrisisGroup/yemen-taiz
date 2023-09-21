@@ -204,7 +204,7 @@ var config = {
       hidden: false,
       title: "",
       image: "",
-      description: "A series of smaller trunk roads.",
+      description: "And a series of smaller trunk roads.",
       location: {
         center: [47.4644, 15.8624],
         zoom: 4,
@@ -360,7 +360,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "In turn, the fighting has led to a severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the border crossings between Saudi Arabia and western Yemen, once vital trade routes between the two countries, being <u class='red'>closed off.</u>",
+        "In turn, the fighting has led to the severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the closure of border crossings between Saudi Arabia and western Yemen, once vital trade routes between the two countries, being <u class='red'>closed off.</u>",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -456,7 +456,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Compounding these barriers to movement, major roads beyond the frontlines are <u class='red'>dotted with checkpoints</u>, where uncoordinated armed groups extort fees from commercial and passenger traffic, significantly increasing the cost of travel.",
+        "Compounding these barriers to movement, major roads beyond the frontlines are <u class='red'>dotted with checkpoints</u>, where armed groups extort fees from commercial and passenger traffic, significantly increasing the cost of travel.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -512,9 +512,9 @@ var config = {
       title: "Yemen’s Major Cities",
       image: "",
       description:
-        "No part of Yemen has been worse affected by the loss of road access than Taiz city." +
+        "No part of Yemen has been worse affected by the loss of road access than Taiz City." +
         '<div class="spacer"></div>' +
-        "Before the ongoing civil war broke out in early 2015, Taiz City was Yemen’s second most populous urban centre.",
+        "Before the ongoing civil war broke out in early 2015, Taiz city was Yemen’s second most populous urban centre.",
       location: {
         center: [47.4644, 15.8624],
         zoom: 4,
@@ -565,7 +565,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Taiz was Yemen’s prewar commercial and cultural capital. It was also an important <u class='green'>economic and transportation hub</u>.",
+        "It also was Yemen's prewar commercial and cultural capital, and a vital <u class='green'>economic and transport hub</u>.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 12,
@@ -1083,17 +1083,11 @@ var config = {
         '<div class="spacer"></div>' +
         "Seeking to alleviate Taizis’ suffering, local mediators and latterly the UN have sought to negotiate the reopening of at least some roads connecting Taiz with the rest of the country. But their efforts have stalled repeatedly because, local mediators say, the Huthis and the government have sought to gain the military upper hand rather than grant access. Many Taizis have come to feel abandoned &dash; by local authorities, the Yemeni government and the UN." +
         '<div class="spacer"></div>' +
-        "The severing of Taiz’s roads registered relatively low on the international list of priorities until recently. Successive UN envoys largely sidestepped the issue, seeing it as a distraction from forging a national peace that would eventually undo road closures. Even when the UN included road access in its initiatives, it did little to follow up. When the current UN envoy, Hans Grundberg, visited Taiz city in November 2021, he was the first diplomat of his rank to do so since the war began." +
-        '<div class="spacer"></div>' +
-        "Taiz’s status changed this April when Yemen’s government added roads to a list of proposed confidence-building measures tied to a UN-brokered nationwide truce. Other measures included reopening Huthi-controlled Sanaa International Airport to international commercial flights and increasing the number of fuel shipments that enter the Huthi-held port of Hodeida. Although there was progress on these last two measures -- to the Huthis’ benefit -- there has been no tangible progress on Taiz." +
-        '<div class="spacer"></div>' +
         '<img src="images/hans.jpg" />' +
-        '<div class="spacer"></div>' +
-        "Negotiations have zeroed in on four roads in and around Taiz city. While the government initially demanded to reopen all of the major roads, the UN proposed that only certain roads be opened. The main sticking point is one of these. The UN and the Yemeni government want the Huthis to open it. The Huthis refuse, and say they will instead open three relatively minor roads that would reduce travel times but would still pose a challenge for buses and heavy vehicles." +
         '<div class="spacer"></div>' +
         "Physical roadblocks around Taiz are now one of the main political barriers to sustaining and expanding the truce the UN negotiated in April 2022." +
         '<div class="spacer"></div>' +
-        "[POLICY CONCLUSION TK] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "[ANY CONCLUSION TEXT OR ACKNOWLEDGEMENTS HERE] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       location: {
         center: [45.5241, 15.08855],
         zoom: 6.57,
