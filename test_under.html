@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        /* CSS Styles */
+        .scroll-animation {
+            text-align: center;
+            margin-top: 200px;
+            position: relative; /* Add relative positioning to the parent container */
+        }
+
+        .scroll-animation::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #0074d9; /* Color of the underline */
+            transition: width 2s ease; /* Transition for the width change */
+        }
+
+        .scroll-animation.active::before {
+            width: 100%; /* Width of the underline when active */
+        }
+        
+        #testdiv {
+            width: 50%;
+            height: 1500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="testdiv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur architecto a molestiae accusantium, ea quisquam placeat officiis praesentium voluptate rerum assumenda ex esse aperiam laborum, itaque aliquid nihil voluptatibus! Voluptatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, ratione similique corporis id consequuntur quis et placeat tenetur atque aliquid hic. Saepe, fugit a nemo iste laudantium iusto id veritatis.</div>
+    <div class="scroll-animation">
+        <p>This is some text.</p>
+    </div>
+
+    <script>
+        // JavaScript Code
+        const targetElement = document.querySelector('.scroll-animation');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    targetElement.classList.add('active');
+                } else {
+                    targetElement.classList.remove('active');
+                }
+            });
+        });
+
+        observer.observe(targetElement);
+    </script>
+</body>
+</html>
