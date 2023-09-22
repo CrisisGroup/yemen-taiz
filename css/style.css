@@ -632,6 +632,17 @@ ul {
   left: 0;
 }
 
+.top-right-legend {
+  left: 0;
+  top: 30px;
+}
+
+@media (max-width: 425px) {
+  .top-right-legend {
+    display: none;
+  }
+}
+
 @media (max-width: 425px) {
     .legend {
         z-index: 0;
