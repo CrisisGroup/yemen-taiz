@@ -1,5 +1,5 @@
 var config = {
-  style: "mapbox://styles/daltonwb/clm7wvqtr02ku01p74h8q4tqr",
+  style: "mapbox://styles/daltonwb/clmuw47in05im01ph61rv8nuf",
   accessToken:
     "pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw",
   showMarkers: false,
@@ -360,7 +360,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "In turn, the fighting has led to the severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the closure of border crossings between Saudi Arabia and western Yemen, once vital trade routes between the two countries, being <u class='red'>closed off.</u>",
+        "In turn, the fighting has led to the severing of most of Yemen’s highways and a number of important trunk roads connecting Huthi-controlled areas with the rest of Yemen. It has also led to the closure of border crossings between Saudi Arabia and western Yemen, once vital trade routes between the two countries.",
       location: {
         center: [44.0183, 13.57773],
         zoom: 13.7,
@@ -982,7 +982,7 @@ var config = {
       title: "",
       image: "",
       description:
-      "<span class='html-video-container'><video width='100%' height='100%' autoplay loop muted playsinline>&gt;<source src='images/hajat.mp4' poster='images/poster2.jpg' type='video/mp4'></video></span>" + "<div class='video-overlay'>" + "<p>The Hajat Al Abad Pass is one of the most dangerous one of these roads. Because of its steep grade and sharp switchbacks, it commonly is blocked in major accidents.</p></div>",
+      "<span class='html-video-container'><video width='100%' height='100%' autoplay loop muted playsinline>&gt;<source src='images/hajat.mp4' poster='images/poster2.jpg' type='video/mp4'></video></span>" + "<div class='video-overlay'>" + "<p>The Hajat Al Abad Pass is one of the most dangerous of these roads. Because of its steep grade and sharp switchbacks, it is often blocked by major accidents.</p></div>",
       location: {
         center: [44.07033, 13.6427],
         zoom: 11.48,
@@ -1007,7 +1007,7 @@ var config = {
       title: " ",
       image: "",
       description:
-        "Adding to the challenge of travel, the forces that control the city are not aligned with other anti-Huthi groups that control Yemen’s south or territory along the Red Sea coast. This tangle of forces and a profusion of <u class='red'>checkpoints</u> run by armed groups that often <strong>extort, detain or assault passengers</strong> are a constant headache for travelers.",
+        "Adding to the challenge of travel, the forces that hold the city are not aligned with other anti-Huthi groups that control Yemen’s south or territory along the Red Sea coast. This tangle of forces and a profusion of <u class='red'>checkpoints</u> run by armed groups that often <strong>extort, detain or assault passengers</strong> are a constant headache for travelers.",
       location: {
         center: [45.5241, 15.08855],
         zoom: 6.57,
