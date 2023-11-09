@@ -314,6 +314,12 @@
     var scroller = scrollama();
 
     map.on('load', () => {
+
+      map.addSource('all-detours', {
+          type: 'vector',
+          url: 'mapbox://daltonwb.bh3q7917'
+        });
+
       map.addSource('yemenroad', {
         type: 'geojson',
         lineMetrics: true,
@@ -9449,6 +9455,27 @@
       window.requestAnimationFrame(frame);
 
     }
+
+        function detourDraw() {
+
+        map.addLayer({
+          id: 'all-detour-routes',
+          type: 'line',
+          source: 'all-detours',
+          layout: {},
+          paint: {
+            'line-color': '#00756a',
+            'line-opacity': 1,
+            'line-width': 3
+          },
+          'source-layer': 'Yemen_Trade_Routes_2023'
+        });
+      }
+
+      function detourRemove() {
+
+        map.removeLayer('all-detour-routes');
+        }
 
     map.on("load", function () {
       console.log('loaded');

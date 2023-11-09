@@ -373,7 +373,7 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
-      callback: "",
+      callback: "detourRemove",
       onChapterEnter: [
         {
           layer: "closures",
@@ -439,15 +439,21 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
-      callback: "",
+      callback: "detourDraw",
       onChapterEnter: [
         {
-          layer: "all-roads",
+          layer: "all-detour-routes",
           duration: 2000,
           opacity: 1,
         },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+        {
+          layer: "all-detour-routes",
+          duration: 2000,
+          opacity: 0,
+        },
+      ],
     },
     {
       id: "PREFACE-6B",
@@ -469,7 +475,7 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
-      callback: "",
+      callback: "detourRemove",
       onChapterEnter: [
         {
           layer: "all-roads",
