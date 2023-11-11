@@ -373,7 +373,7 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
-      callback: "detourRemove",
+      callback: "",
       onChapterEnter: [
         {
           layer: "closures",
@@ -441,11 +441,7 @@ var config = {
       rotateAnimation: false,
       callback: "detourDraw",
       onChapterEnter: [
-        {
-          layer: "all-detour-routes",
-          duration: 2000,
-          opacity: 1,
-        },
+
       ],
       onChapterExit: [
         {
@@ -475,7 +471,7 @@ var config = {
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
-      callback: "detourRemove",
+      callback: "",
       onChapterEnter: [
         {
           layer: "all-roads",
